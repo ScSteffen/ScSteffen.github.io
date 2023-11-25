@@ -8,12 +8,6 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- Publications Page -->
-    <url>
-        <loc>https://scsteffen.github.io/publications.html</loc>
-        <lastmod>2023-11-24</lastmod>
-        <priority>0.8</priority>
-    </url>
 
     <!-- Add more pages as needed -->
 

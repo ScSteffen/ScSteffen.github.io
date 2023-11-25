@@ -585,3 +585,19 @@
 	};
 
 })(jQuery);
+
+function myFunction(nr) {
+	var dots = document.getElementById("dots"+nr);
+	var moreText = document.getElementById("more"+nr);
+	var btnText = document.getElementById("myBtn" +nr);
+
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btnText.innerHTML = "Read more";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "Read less";
+	  moreText.style.display = "inline";
+	}
+  }
