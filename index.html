@@ -59,6 +59,24 @@
     <section id="two">
         <h2>News</h2>
         <div class="row">
+             <article class="col-6 col-12-xsmall work-item">
+                <a href="img_news/energy_vla_compare_problemlld_rev.png" class="image fit thumb"><img
+                        src="img_news/modify_deeponet.png"
+                        alt="Numerical results of the low-rank simulation"/></a>
+                <h3> Paper out: Feb. 26 2024
+                </h3>
+                <p> Can we use operator learning to accellerate PDE simulations without sacrificing structural properties of the underlying operators?
+                    <span id="dots6">...</span>
+                    <span id="more6"> Yes! We investigate the capabilities of the Deep Operator network (DeepONet) approach to modelling the high dimensional collision operator of the linear kinetic equation.
+                        This integral operator has crucial analytical structures that a surrogate model, e.g., a DeepONet, needs to preserve to enable meaningful physical simulation.
+                        We propose several DeepONet modifications to encapsulate essential structural properties of this integral operator in a DeepONet model.
+                        To be precise, we adapt the architecture of the trunk-net so the DeepONet has the same collision invariants as the theoretical kinetic collision operator, thus preserving conserved quantities, e.g., mass, of the modeled many-particle system.
+                        Further, we propose an entropy-inspired data-sampling method tailored to train the modified DeepONet surrogates without requiring an excessive expensive simulation-based data generation in the
+                                       <a href="https://arxiv.org/abs/2311.06399"> full paper</a>.
+                    </span></p>
+                <a onclick="myFunction('6')" id="myBtn6">Read more</a>
+            </article>
+
             <article class="col-6 col-12-xsmall work-item">
                 <a href="img_news/energy_vla_compare_problemlld_rev.png" class="image fit thumb"><img
                         src="img_news/energy_vla_compare_problemlld_rev.png"
@@ -437,7 +455,7 @@ A smaller number of methods address the reduction of training costs, mostly base
 <!-- Footer -->
 <footer id="footer">
     <ul class="icons">
-        <li><a href="mailto:steffen.schotthoefer@gmail.com?subject=Contact from your website"
+        <li><a href="mailto:schotthofers@ornl.gov?subject=Contact from your website"
                class="icon solid fa-envelope"><span
                 class="label">Email</span></a></li>
         <li><a href="https://github.com/ScSteffen" class="icon brands fa-github"><span
