@@ -48,10 +48,8 @@
             <h2>About me</h2>
         </header>
         <p>I am the Householder Fellow in Mathematics at the <a href="https://www.ornl.gov/">Oak Ridge National
-            Laboratory, USA</a>. My
-            research involves low-rank based methods for neural network compression and high dimensional PDE simulation.
-            A key motivation of
-            my work is increasing efficiency and robustness of models for real world applications.
+            Laboratory, USA</a>. My current research is centered around AI for Science, with focus on low-rank approximation methods for high dimensional PDEs and neural networks.
+            My goal is to create increasingly robust and efficient methods for complex simulations, in particular for plasma and nuclear physics.
         </p>
     </section>
 
@@ -59,6 +57,27 @@
     <section id="two">
         <h2>News</h2>
         <div class="row">
+
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="img_news/reg_hohlraum.png" class="image fit thumb"><img
+                        src="img_news/reg_hohlraum.png"
+                        alt="Regularized Neural Network Simulation of the Hohlraum test case"/></a>
+                <h3> Paper out: April. 26 2024
+                    <span class="icons">
+                        <a href="https://github.com/ScSteffen/neuralEntropyClosures"
+                           class="icon brands fa-github"><span class="label">Github</span></a>
+                    </span>
+                </h3>
+                <p> The main challenge of large-scale numerical simulation of radiation transport is the high memory and computation time requirements of discretization methods for kinetic equations.
+                    <span id="dots6">...</span>
+                    <span id="more6"  style="display: none;">
+ In this work, we derive and investigate a neural network-based approximation to the entropy closure method to accurately compute the solution of the multi-dimensional moment system with a low memory footprint and competitive computational time. We extend methods developed for the standard entropy-based closure to the context of regularized entropy-based closures. The main idea is to interpret structure-preserving neural network approximations of the regularized entropy closure as a two-stage approximation to the original entropy closure. We conduct a numerical analysis of this approximation and investigate optimal parameter choices. Our numerical experiments demonstrate that the method has a much lower memory footprint than traditional methods with competitive computation times and simulation accuracy. We present numerical comparisons
+                                    to existing conservative integrators and discuss advantages and disadvantages in the
+                                       <a href="https://arxiv.org/abs/2404.14312"> full paper</a>.
+                    </span></p>
+                <a onclick="myFunction('6')" id="myBtn6">Read more</a>
+            </article>
+
              <article class="col-6 col-12-xsmall work-item">
                 <a href="img_news/energy_vla_compare_problemlld_rev.png" class="image fit thumb"><img
                         src="img_news/modify_deeponet.png"
@@ -66,15 +85,15 @@
                 <h3> Paper out: Feb. 26 2024
                 </h3>
                 <p> Can we use operator learning to accellerate PDE simulations without sacrificing structural properties of the underlying operators?
-                    <span id="dots6">...</span>
-                    <span id="more6"> Yes! We investigate the capabilities of the Deep Operator network (DeepONet) approach to modelling the high dimensional collision operator of the linear kinetic equation.
+                    <span id="dots5">...</span>
+                    <span id="more5"  style="display: none;"> Yes! We investigate the capabilities of the Deep Operator network (DeepONet) approach to modelling the high dimensional collision operator of the linear kinetic equation.
                         This integral operator has crucial analytical structures that a surrogate model, e.g., a DeepONet, needs to preserve to enable meaningful physical simulation.
                         We propose several DeepONet modifications to encapsulate essential structural properties of this integral operator in a DeepONet model.
                         To be precise, we adapt the architecture of the trunk-net so the DeepONet has the same collision invariants as the theoretical kinetic collision operator, thus preserving conserved quantities, e.g., mass, of the modeled many-particle system.
                         Further, we propose an entropy-inspired data-sampling method tailored to train the modified DeepONet surrogates without requiring an excessive expensive simulation-based data generation in the
                                        <a href="https://arxiv.org/abs/2311.06399"> full paper</a>.
                     </span></p>
-                <a onclick="myFunction('6')" id="myBtn6">Read more</a>
+                <a onclick="myFunction('5')" id="myBtn5">Read more</a>
             </article>
 
             <article class="col-6 col-12-xsmall work-item">
@@ -90,8 +109,8 @@
                 <p> One key question when using DLRA methods is the construction of robust time integrators that
                     preserve the invariances
                     and associated conservation laws of the original problem.
-                    <span id="dots1">...</span>
-                    <span id="more1">
+                    <span id="dots4">...</span>
+                    <span id="more4"  style="display: none;">
 Numerical simulations of kinetic problems can become prohibitively expensive due to their large memory footprint and computational costs.
                                     A method that has proven to successfully reduce these costs is the dynamical low-rank approximation (DLRA).
                                     In this work, we demonstrate that the augmented basis update & Galerkin integrator (BUG)
@@ -100,8 +119,9 @@ Numerical simulations of kinetic problems can become prohibitively expensive due
                                     to existing conservative integrators and discuss advantages and disadvantages in the
                                        <a href="https://arxiv.org/abs/2311.06399"> full paper</a>.
                     </span></p>
-                <a onclick="myFunction('1')" id="myBtn1">Read more</a>
+                <a onclick="myFunction('4')" id="myBtn4">Read more</a>
             </article>
+
             <article class="col-6 col-12-xsmall work-item">
                 <a href="img_news/continuum_breakdown.png" class="image fit thumb"><img
                         src="img_news/continuum_breakdown.png" alt="Numerical results of the low-rank simulation"/></a>
@@ -110,8 +130,8 @@ Numerical simulations of kinetic problems can become prohibitively expensive due
                 </h3>
                 <p> Gas dynamic simulations that span multiple flow regimes are a challenging problem in high-altitude
                     aerospace, turbo-machinery and propulsion engines.
-                    <span id="dots2">...</span>
-                    <span id="more2">Shock regions require
+                    <span id="dots3">...</span>
+                    <span id="more3"  style="display: none;">Shock regions require
                     expensive, high resolution kinetic schemes, but are local phenomena.
                     We build a physics informed neural network based detector of shock regions using only coarse grained
                     information. Based on this flow-regime
@@ -119,7 +139,7 @@ Numerical simulations of kinetic problems can become prohibitively expensive due
                     efficient hybrid simulation.   The work is published in the Journal of Computational Physics and the preprint is available on
                                         <a href="https://arxiv.org/abs/2203.02933">Arxiv</a>.
                                     </span></p>
-                <a onclick="myFunction('2')" id="myBtn2">Read more</a>
+                <a onclick="myFunction('3')" id="myBtn3" >Read more</a>
             </article>
 
             <article class="col-6 col-12-xsmall work-item">
@@ -128,11 +148,11 @@ Numerical simulations of kinetic problems can become prohibitively expensive due
                 <h3> New Position: Sep. 3rd 2023 </h3>
                 <p>
                     I'm excited to start my new position as Householder Fellow at the Oak Ridge National Laboratory.
-                    <span id="dots3">...</span><span id="more3" style="display: none;">
+                    <span id="dots2">...</span><span id="more2" style="display: none;">
                                 In the next years my research is focussed on improving dynamical low-rank methods for neural network training and investigating its applications.
                                 </span>
                 </p>
-                <a onclick="myFunction('3')" id="myBtn3">Read more</a>
+                <a onclick="myFunction('2')" id="myBtn2">Read more</a>
             </article>
             <article class="col-6 col-12-xsmall work-item">
                 <a href="img_news/lr_manifold.png" class="image fit thumb"><img src="img_news/lr_manifold.png"
@@ -142,8 +162,8 @@ Numerical simulations of kinetic problems can become prohibitively expensive due
                 <p> The computing cost and memory demand of deep learning pipelines have grown fast in recent years and
                     thus a variety of pruning techniques have been developed
                     to reduce model parameters.
-                    <span id="dots4">...</span>
-                    <span id="more4" style="display: none;">
+                    <span id="dots1">...</span>
+                    <span id="more1" style="display: none;">
                             The majority of these techniques focus on reducing inference costs by pruning the network after a pass of full training.
 A smaller number of methods address the reduction of training costs, mostly based on compressing the network via low-rank layer factorizations.
                             Despite their efficiency for linear layers, these methods fail to effectively handle convolutional filters.
@@ -156,7 +176,7 @@ A smaller number of methods address the reduction of training costs, mostly base
                            <a href="https://arxiv.org/abs/2305.19059"> full paper</a> on arxiv.
                     </span>
                 </p>
-                <a onclick="myFunction('4')" id="myBtn4">Read more</a>
+                <a onclick="myFunction('1')" id="myBtn1">Read more</a>
             </article>
 
 
@@ -167,6 +187,13 @@ A smaller number of methods address the reduction of training costs, mostly base
     <section id="three">
         <h2>Publications</h2>
             <h4>2024</h4>
+                <ul>
+                    <li>Structure-preserving neural networks for the regularized entropy-based closure of the Boltzmann moment system <br/>
+                        <b> <u>Steffen Schotthöfer</u>, M. Paul Laiu,  Martin Frank, Cory Hauck
+                        </b><br/>
+                        <i><a href="https://arxiv.org/abs/1804.05447">ArXiv preprint</a> </i>
+                    </li>
+                </ul>
                 <ul>
                     <li>Structure-Preserving Operator Learning: Modeling the Collision Operator of
 Kinetic Equations <br/>
@@ -276,6 +303,11 @@ Kinetic Equations <br/>
     <section id="four">
         <h2> Community and Outreach</h2>
         <ul>
+            <li>Reviewer for the <br/>
+                <i><a href="https://icml.cc/">ICML 2024 Conference</a></i>
+                <br/>
+                March 2024
+            </li>
             <li>Reviewer for the <br/>
                 <i><a href="https://nips.cc/">NeurIPS 2023 Conference</a></i>
                 <br/>
