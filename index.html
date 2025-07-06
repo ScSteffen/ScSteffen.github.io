@@ -27,10 +27,9 @@
         <nav class="hidden md:flex gap-6 text-sm">
           <a href="#about" class="hover:underline">About</a>
           <a href="#publications" class="hover:underline">Publications</a>
-          <a href="#conferences" class="hover:underline">Presentations</a>
           <a href="#software" class="hover:underline">Software</a>
+          <a href="#conferences" class="hover:underline">Presentations</a>
           <a href="#volunteering" class="hover:underline">Volunteering</a>
-          <a href="#cv" class="hover:underline">CV</a>
           <a href="#contact" class="hover:underline">Contact</a>
         </nav>
         <button id="theme-toggle" class="ml-4 text-sm border px-2 py-1 rounded hover:bg-gray-100 dark:hover:bg-gray-700">🌓</button>
@@ -38,7 +37,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <!-- Hero -->
   <section class="pt-32 pb-16 bg-gray-100 dark:bg-gray-800">
     <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-6 px-4">
@@ -58,7 +56,7 @@
           <a href="https://www.linkedin.com/in/steffen-schotthoefer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="h-6 w-6">
           </a>
-           <a href="https://scholar.google.com/citations?user=xxxxxxxxxx" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+           <a href="https://scholar.google.com/citations?user=dZqiHeMAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
             <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Google Scholar icon</title><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
           </a>
         </div>
@@ -245,6 +243,88 @@
   </div>
 </section>
 
+  <!-- Software Section -->
+<section id="software" class="max-w-4xl mx-auto py-16 px-4 mt-12">
+  <h2 class="text-3xl font-bold mb-6">Software Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-800 dark:text-gray-200">
+    <article class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+      <a href="https://github.com/CSMMLab/KiT-RT" class="block mb-4">
+        <img src="assets/KiT-RT_logo_small.png" alt="KiT-RT Logo" class="w-full object-contain" />
+      </a>
+      <h3 class="text-xl font-semibold mb-2">
+        KiT-RT
+        <a href="https://github.com/CSMMLab/KiT-RT" class="inline-block ml-2 text-blue-600 hover:text-blue-800" aria-label="KiT-RT GitHub repository">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </h3>
+      <p>
+        The main focus of the KiT-RT software suite is radiotherapy planning for cancer treatment and research in radiative transfer.
+        It supports easy extension with additional methods and techniques. KiT-RT is a high-performance open source C++ platform, available on
+        <a href="https://github.com/CSMMLab/KiT-RT" class="text-blue-600 underline hover:text-blue-800">Github</a> with documentation on
+        <a href="https://kit-rt.readthedocs.io/en/develop/index.html" class="text-blue-600 underline hover:text-blue-800">ReadTheDocs</a>.
+        The software-paper is available on <a href="https://arxiv.org/abs/2205.08417" class="text-blue-600 underline hover:text-blue-800">Arxiv</a>.
+      </p>
+    </article>
+
+    <article class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+      <a href="https://su2code.github.io/" class="block mb-4">
+        <img src="assets/logoSU2.png" alt="SU2 Logo" class="w-full object-contain" />
+      </a>
+      <h3 class="text-xl font-semibold mb-2">
+        SU2
+        <a href="https://su2code.github.io/" class="inline-block ml-2 text-blue-600 hover:text-blue-800" aria-label="SU2 GitHub repository">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </h3>
+      <p>
+        Drag reduction of airplane wings is crucial for fuel efficient flight. We use windowing regularization for robust PDE constrained optimization of unsteady flows.
+        On the NACA0012 airfoil with turbulent flow at high angle of attack, a 30% drag reduction compared to unregularized baseline was achieved.
+        This method is embedded in the open-source multi-physics software
+        <a href="https://su2code.github.io/" class="text-blue-600 underline hover:text-blue-800">SU2</a>. Try it yourself with the
+        <a href="https://su2code.github.io/tutorials/Unsteady_NACA0012/" class="text-blue-600 underline hover:text-blue-800">SU2 tutorial</a>.
+      </p>
+      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+        Awarded 1st place at the Multidisciplinary Design Optimization Student Paper Competition at the
+        <a href="https://www.aiaa.org/aviation" class="text-blue-600 underline hover:text-blue-800">AIAA Aviation Forum 2020</a>.
+      </p>
+    </article>
+  </div>
+</section>
+
+  <section id="volunteering" class="bg-gray-50 dark:bg-gray-800 max-w-4xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold mb-6">Community and Volunteering</h2>
+  <ul class="list-disc list-inside space-y-4 text-gray-800 dark:text-gray-200">
+    <li>Reviewer for the Journals
+      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
+        <li><i><a href="https://link.springer.com/journal/10915" class="text-blue-600 underline hover:text-blue-800">Journal of Scientific Computing</a></i></li>
+        <li><i><a href="https://www.sciencedirect.com/journal/journal-of-computational-physics" class="text-blue-600 underline hover:text-blue-800">Journal of Computational Physics</a></i></li>
+        <li><i><a href="https://www.siam.org/publications/journals/multiscale-modeling-and-simulation-a-siam-interdisciplinary-journal-mms" class="text-blue-600 underline hover:text-blue-800">SIAM Multiscale Methods and Simulation</a></i></li>
+        <li><i><a href="https://link.springer.com/journal/10957" class="text-blue-600 underline hover:text-blue-800">Journal of Optimization Theory and Applications</a></i></li>
+      </ul>
+    </li>
+
+    <li>Reviewer for the Conferences
+      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
+        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2025 Conference</a></i></li>
+        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">ICML 2025 Conference</a></i></li>
+        <li><i><a href="https://iclr.cc/" class="text-blue-600 underline hover:text-blue-800">ICLR 2025 Conference</a></i></li>
+        <li><i><a href="https://nips.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2024 Conference</a></i></li>
+        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">ICML 2024 Conference</a></i></li>
+        <li><i><a href="https://aaai.org/conference/aaai/aaai-25/" class="text-blue-600 underline hover:text-blue-800">AIAA 2025 Conference</a></i></li>
+        <li><i><a href="https://nips.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2023 Conference</a></i></li>
+      </ul>
+    </li>
+
+    <li>Organization of the
+      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
+        <li><i><a href="https://indico.scc.kit.edu/event/659/" class="text-blue-600 underline hover:text-blue-800">International Workshop on Moment Methods in Kinetic Theory IV</a></i></li>
+        <li><i>Minisymposium "Advances in High Dimensional PDE Methods using Sparse Grids and Low-Rank" at the <a href="https://www.siam.org/conferences-events/siam-conferences/cse25/" class="text-blue-600 underline hover:text-blue-800">SIAM CSE 2025</a> conference</i></li>
+        <li><i>Minisymposium "Federated Learning and Data Mining in Distributed Environments" at the <a href="https://math.utk.edu/siam-seas/" class="text-blue-600 underline hover:text-blue-800">SIAM SEAS 2025</a> conference</i></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
 <!-- Conferences Section -->
 <section id="conferences" class="max-w-4xl mx-auto py-16 px-4">
   <h2 class="text-3xl font-bold mb-6">Conferences</h2>
@@ -333,104 +413,20 @@ In Conjunction with NeurIPS 2024 </a></i>
   </ul>
 </section>
 
-  <section id="volunteering" class="bg-gray-50 dark:bg-gray-800 max-w-4xl mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold mb-6">Community and Volunteering</h2>
-  <ul class="list-disc list-inside space-y-4 text-gray-800 dark:text-gray-200">
-    <li>Reviewer for the Journals
-      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
-        <li><i><a href="https://link.springer.com/journal/10915" class="text-blue-600 underline hover:text-blue-800">Journal of Scientific Computing</a></i></li>
-        <li><i><a href="https://www.sciencedirect.com/journal/journal-of-computational-physics" class="text-blue-600 underline hover:text-blue-800">Journal of Computational Physics</a></i></li>
-        <li><i><a href="https://www.siam.org/publications/journals/multiscale-modeling-and-simulation-a-siam-interdisciplinary-journal-mms" class="text-blue-600 underline hover:text-blue-800">SIAM Multiscale Methods and Simulation</a></i></li>
-        <li><i><a href="https://link.springer.com/journal/10957" class="text-blue-600 underline hover:text-blue-800">Journal of Optimization Theory and Applications</a></i></li>
-      </ul>
-    </li>
 
-    <li>Reviewer for the Conferences
-      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
-        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2025 Conference</a></i></li>
-        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">ICML 2025 Conference</a></i></li>
-        <li><i><a href="https://iclr.cc/" class="text-blue-600 underline hover:text-blue-800">ICLR 2025 Conference</a></i></li>
-        <li><i><a href="https://nips.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2024 Conference</a></i></li>
-        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">ICML 2024 Conference</a></i></li>
-        <li><i><a href="https://aaai.org/conference/aaai/aaai-25/" class="text-blue-600 underline hover:text-blue-800">AIAA 2025 Conference</a></i></li>
-        <li><i><a href="https://nips.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2023 Conference</a></i></li>
-      </ul>
-    </li>
-
-    <li>Organization of the
-      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
-        <li><i><a href="https://indico.scc.kit.edu/event/659/" class="text-blue-600 underline hover:text-blue-800">International Workshop on Moment Methods in Kinetic Theory IV</a></i></li>
-        <li><i>Minisymposium "Advances in High Dimensional PDE Methods using Sparse Grids and Low-Rank" at the <a href="https://www.siam.org/conferences-events/siam-conferences/cse25/" class="text-blue-600 underline hover:text-blue-800">SIAM CSE 2025</a> conference</i></li>
-        <li><i>Minisymposium "Federated Learning and Data Mining in Distributed Environments" at the <a href="https://math.utk.edu/siam-seas/" class="text-blue-600 underline hover:text-blue-800">SIAM SEAS 2025</a> conference</i></li>
-      </ul>
-    </li>
-  </ul>
-</section>
-
-<!-- Software Section -->
-<section id="software" class="max-w-4xl mx-auto py-16 px-4 mt-12">
-  <h2 class="text-3xl font-bold mb-6">Software Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-800 dark:text-gray-200">
-    <article class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
-      <a href="https://github.com/CSMMLab/KiT-RT" class="block mb-4">
-        <img src="assets/KiT-RT_logo_small.png" alt="KiT-RT Logo" class="w-full object-contain" />
-      </a>
-      <h3 class="text-xl font-semibold mb-2">
-        KiT-RT
-        <a href="https://github.com/CSMMLab/KiT-RT" class="inline-block ml-2 text-blue-600 hover:text-blue-800" aria-label="KiT-RT GitHub repository">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </h3>
-      <p>
-        The main focus of the KiT-RT software suite is radiotherapy planning for cancer treatment and research in radiative transfer.
-        It supports easy extension with additional methods and techniques. KiT-RT is a high-performance open source C++ platform, available on
-        <a href="https://github.com/CSMMLab/KiT-RT" class="text-blue-600 underline hover:text-blue-800">Github</a> with documentation on
-        <a href="https://kit-rt.readthedocs.io/en/develop/index.html" class="text-blue-600 underline hover:text-blue-800">ReadTheDocs</a>.
-        The software-paper is available on <a href="https://arxiv.org/abs/2205.08417" class="text-blue-600 underline hover:text-blue-800">Arxiv</a>.
-      </p>
-    </article>
-
-    <article class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
-      <a href="https://su2code.github.io/" class="block mb-4">
-        <img src="assets/logoSU2.png" alt="SU2 Logo" class="w-full object-contain" />
-      </a>
-      <h3 class="text-xl font-semibold mb-2">
-        SU2
-        <a href="https://su2code.github.io/" class="inline-block ml-2 text-blue-600 hover:text-blue-800" aria-label="SU2 GitHub repository">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </h3>
-      <p>
-        Drag reduction of airplane wings is crucial for fuel efficient flight. We use windowing regularization for robust PDE constrained optimization of unsteady flows.
-        On the NACA0012 airfoil with turbulent flow at high angle of attack, a 30% drag reduction compared to unregularized baseline was achieved.
-        This method is embedded in the open-source multi-physics software
-        <a href="https://su2code.github.io/" class="text-blue-600 underline hover:text-blue-800">SU2</a>. Try it yourself with the
-        <a href="https://su2code.github.io/tutorials/Unsteady_NACA0012/" class="text-blue-600 underline hover:text-blue-800">SU2 tutorial</a>.
-      </p>
-      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-        Awarded 1st place at the Multidisciplinary Design Optimization Student Paper Competition at the
-        <a href="https://www.aiaa.org/aviation" class="text-blue-600 underline hover:text-blue-800">AIAA Aviation Forum 2020</a>.
-      </p>
-    </article>
-  </div>
-</section>
 
 
 </section>
 
 
-  <!-- CV -->
-  <section id="cv" class="text-center py-16 px-4 bg-white dark:bg-gray-900">
-    <h3 class="text-2xl font-bold mb-4">Curriculum Vitae</h3>
-    <p class="mb-4 text-gray-600 dark:text-gray-300">Download my full CV below.</p>
-    <a href="CV_Steffen.pdf" class="inline-block px-6 py-3 bg-black text-white rounded hover:bg-gray-800">Download CV</a>
-  </section>
+
 
   <!-- Contact -->
   <section id="contact" class="text-center py-16 px-4 bg-gray-100 dark:bg-gray-800">
     <h3 class="text-2xl font-bold mb-4">Contact</h3>
     <p class="text-gray-600 dark:text-gray-300 mb-2">Open to research and applied AI opportunities.</p>
-   <span>steffen [dot] schotthoefer [at] gmail [dot] com</span></a>
+   <span>steffen [dot] schotthoefer [at] gmail [dot] com</span></a></br></br>
+      <a href="CV_Steffen.pdf" class="inline-block px-6 py-3 bg-black text-white rounded hover:bg-gray-800">Download CV</a>
   </section>
 
   <!-- Footer -->
