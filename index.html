@@ -1,646 +1,451 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
 <head>
-    <title> Steffen Schotthöfer - Math and AI researcher </title>
-    <meta name="description"
-          content="Welcome to the personal website of Steffen Schotthöfer. Explore my portfolio, learn about my skills and experience, and connect with me."/>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal homepage of Steffen Schotthöfer, Research Scientist in AI and Mathematics.">
+  <meta name="author" content="Steffen Schotthöfer">
+  <meta property="og:title" content="Steffen Schotthöfer – Research Scientist in AI & Mathematics">
+  <meta property="og:description" content="Applied mathematician and AI researcher focused on efficient deep learning and optimization.">
+  <meta property="og:type" content="website">
+  <title>Steffen Schotthöfer – AI & Math Researcher</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
 </head>
-<body class="is-preload">
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
-<!-- Header -->
-<header id="header">
-    <div class="banner">
-        <a href="#" class="image avatar"><img src="images/Steffen_portrait.jpg" alt="Profile picture of Steffen Schotthöfer."/></a>
-        <h1><strong>Hi, I am Steffen Schotthöfer!</strong></h1>
-        <p>Machine Learning - Plasma Physics - High Performance Computing</p>
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow z-50">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-lg font-semibold">Steffen Schotthöfer</h1>
+      <div class="flex gap-4 items-center">
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#publications" class="hover:underline">Publications</a>
+          <a href="#conferences" class="hover:underline">Presentations</a>
+          <a href="#software" class="hover:underline">Software</a>
+          <a href="#volunteering" class="hover:underline">Volunteering</a>
+          <a href="#cv" class="hover:underline">CV</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="ml-4 text-sm border px-2 py-1 rounded hover:bg-gray-100 dark:hover:bg-gray-700">🌓</button>
+      </div>
     </div>
+  </header>
 
-    <div class="container">
-        <ul class="actions">
-            <li><a href="#two" class="button">News</a></li>
-            <li><a href="#three" class="button">Publications</a></li>
-            <!--<li><a href="#one" class="button">About</a></li>
-
-
-            <li><a href="#four" class="button">Outreach</a></li>
-            <li><a href="#five" class="button">Talks</a></li>-->
-            <li><a href="#six" class="button">Software</a></li>
-
-        </ul>
-    </div>
-
-</header>
-
-<!-- Main -->
-<div id="main">
-
-    <!-- One  -->
-    <section id="one">
-        <header class="major">
-            <h2>About me</h2>
-        </header>
-        <p>I am the Householder Fellow in Mathematics at the <a href="https://www.ornl.gov/">Oak Ridge National
-            Laboratory, USA</a>. My current research is centered around AI for Science, with focus on low-rank approximation methods for high dimensional PDEs and neural networks.
-            My goal is to create increasingly robust and efficient methods for complex simulations, in particular for plasma and nuclear physics.
-        </p>
-    </section>
-
-    <!-- Two -->
-    <section id="two">
-        <h2>News</h2>
-        <div class="row">
-
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/reg_hohlraum.png" class="image fit thumb"><img
-                        src="img_news/reg_hohlraum.png"
-                        alt="Regularized Neural Network Simulation of the Hohlraum test case"/></a>
-                <h3> Paper out: April. 26 2024
-                    <span class="icons">
-                        <a href="https://github.com/ScSteffen/neuralEntropyClosures"
-                           class="icon brands fa-github"><span class="label">Github</span></a>
-                    </span>
-                </h3>
-                <p> The main challenge of large-scale numerical simulation of radiation transport is the high memory and computation time requirements of discretization methods for kinetic equations.
-                    <span id="dots6">...</span>
-                    <span id="more6"  style="display: none;">
- In this work, we derive and investigate a neural network-based approximation to the entropy closure method to accurately compute the solution of the multi-dimensional moment system with a low memory footprint and competitive computational time. We extend methods developed for the standard entropy-based closure to the context of regularized entropy-based closures. The main idea is to interpret structure-preserving neural network approximations of the regularized entropy closure as a two-stage approximation to the original entropy closure. We conduct a numerical analysis of this approximation and investigate optimal parameter choices. Our numerical experiments demonstrate that the method has a much lower memory footprint than traditional methods with competitive computation times and simulation accuracy. We present numerical comparisons
-                                    to existing conservative integrators and discuss advantages and disadvantages in the
-                                       <a href="https://arxiv.org/abs/2404.14312"> full paper</a>.
-                    </span></p>
-                <a onclick="myFunction('6')" id="myBtn6">Read more</a>
-            </article>
-
-             <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/energy_vla_compare_problemlld_rev.png" class="image fit thumb"><img
-                        src="img_news/modify_deeponet.png"
-                        alt="Numerical results of the low-rank simulation"/></a>
-                <h3> Paper out: Feb. 26 2024
-                </h3>
-                <p> Can we use operator learning to accellerate PDE simulations without sacrificing structural properties of the underlying operators?
-                    <span id="dots5">...</span>
-                    <span id="more5"  style="display: none;"> Yes! We investigate the capabilities of the Deep Operator network (DeepONet) approach to modelling the high dimensional collision operator of the linear kinetic equation.
-                        This integral operator has crucial analytical structures that a surrogate model, e.g., a DeepONet, needs to preserve to enable meaningful physical simulation.
-                        We propose several DeepONet modifications to encapsulate essential structural properties of this integral operator in a DeepONet model.
-                        To be precise, we adapt the architecture of the trunk-net so the DeepONet has the same collision invariants as the theoretical kinetic collision operator, thus preserving conserved quantities, e.g., mass, of the modeled many-particle system.
-                        Further, we propose an entropy-inspired data-sampling method tailored to train the modified DeepONet surrogates without requiring an excessive expensive simulation-based data generation in the
-                                       <a href="https://arxiv.org/abs/2311.06399"> full paper</a>.
-                    </span></p>
-                <a onclick="myFunction('5')" id="myBtn5">Read more</a>
-            </article>
-
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/energy_vla_compare_problemlld_rev.png" class="image fit thumb"><img
-                        src="img_news/energy_vla_compare_problemlld_rev.png"
-                        alt="Numerical results of the low-rank simulation"/></a>
-                <h3> Paper out: Nov. 17 2023
-                    <span class="icons">
-                        <a href="https://github.com/JonasKu/Publication-Conservation-properties-of-the-augmented-basis-update-Galerkin-integrator"
-                           class="icon brands fa-github"><span class="label">Github</span></a>
-                    </span>
-                </h3>
-                <p> One key question when using DLRA methods is the construction of robust time integrators that
-                    preserve the invariances
-                    and associated conservation laws of the original problem.
-                    <span id="dots4">...</span>
-                    <span id="more4"  style="display: none;">
-Numerical simulations of kinetic problems can become prohibitively expensive due to their large memory footprint and computational costs.
-                                    A method that has proven to successfully reduce these costs is the dynamical low-rank approximation (DLRA).
-                                    In this work, we demonstrate that the augmented basis update & Galerkin integrator (BUG)
-                                    preserves solution invariances and the associated conservation laws when using a conservative
-                                    truncation step and an appropriate time and space discretization. We present numerical comparisons
-                                    to existing conservative integrators and discuss advantages and disadvantages in the
-                                       <a href="https://arxiv.org/abs/2311.06399"> full paper</a>.
-                    </span></p>
-                <a onclick="myFunction('4')" id="myBtn4">Read more</a>
-            </article>
-
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/continuum_breakdown.png" class="image fit thumb"><img
-                        src="img_news/continuum_breakdown.png" alt="Numerical results of the low-rank simulation"/></a>
-                <h3> Paper published: Sept. 15 2023
-                    <a href="https://github.com/CSMMLab/Flowmachine" class="icon brands fa-github"><span class="label">Github</span></a>
-                </h3>
-                <p> Gas dynamic simulations that span multiple flow regimes are a challenging problem in high-altitude
-                    aerospace, turbo-machinery and propulsion engines.
-                    <span id="dots3">...</span>
-                    <span id="more3"  style="display: none;">Shock regions require
-                    expensive, high resolution kinetic schemes, but are local phenomena.
-                    We build a physics informed neural network based detector of shock regions using only coarse grained
-                    information. Based on this flow-regime
-                    classification, solvers with different physical resolutions are employed to enable a robust, but
-                    efficient hybrid simulation.   The work is published in the Journal of Computational Physics and the preprint is available on
-                                        <a href="https://arxiv.org/abs/2203.02933">Arxiv</a>.
-                                    </span></p>
-                <a onclick="myFunction('3')" id="myBtn3" >Read more</a>
-            </article>
-
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/ornl.jpg" class="image fit thumb"><img src="img_news/ornl.jpg"
-                                                                         alt="Visitor center of the Oak Ridge National Lab"/></a>
-                <h3> New Position: Sep. 3rd 2023 </h3>
-                <p>
-                    I'm excited to start my new position as Householder Fellow at the Oak Ridge National Laboratory.
-                    <span id="dots2">...</span><span id="more2" style="display: none;">
-                                In the next years my research is focussed on improving dynamical low-rank methods for neural network training and investigating its applications.
-                                </span>
-                </p>
-                <a onclick="myFunction('2')" id="myBtn2">Read more</a>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/lr_manifold.png" class="image fit thumb"><img src="img_news/lr_manifold.png"
-                                                                                alt="Numerical results of the low-rank simulation"/></a>
-                <h3> Paper out: May 30 2023
-                </h3>
-                <p> The computing cost and memory demand of deep learning pipelines have grown fast in recent years and
-                    thus a variety of pruning techniques have been developed
-                    to reduce model parameters.
-                    <span id="dots1">...</span>
-                    <span id="more1" style="display: none;">
-                            The majority of these techniques focus on reducing inference costs by pruning the network after a pass of full training.
-A smaller number of methods address the reduction of training costs, mostly based on compressing the network via low-rank layer factorizations.
-                            Despite their efficiency for linear layers, these methods fail to effectively handle convolutional filters.
-                            In this work, we propose a low-parametric training method that factorizes the convolutions into tensor Tucker format and adaptively prunes the
-                            Tucker ranks of the convolutional kernel during training.
-                            Leveraging fundamental results from geometric integration theory of differential equations on tensor manifolds, we obtain a robust training
-                            algorithm that provably approximates the full baseline performance and guarantees loss descent.
-                            A variety of experiments against the full model and alternative low-rank baselines are implemented, showing that the proposed method drastically reduces the
-                            training costs, while achieving high performance, comparable to or better than the full baseline, and consistently outperforms competing low-rank approaches. Read the
-                           <a href="https://arxiv.org/abs/2305.19059"> full paper</a> on arxiv.
-                    </span>
-                </p>
-                <a onclick="myFunction('1')" id="myBtn1">Read more</a>
-            </article>
-
-
+  <!-- Hero -->
+  <!-- Hero -->
+  <section class="pt-32 pb-16 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-6 px-4">
+      <img src="assets/headshot.jpeg" alt="Headshot of Steffen Schotthöfer" class="w-32 h-32 rounded-full object-cover flex-shrink-0" />
+      <div class="text-center md:text-left">
+        <h2 class="text-4xl font-bold">Steffen Schotthöfer</h2>
+        <p class="mt-4 text-xl text-gray-700 dark:text-gray-300">Research Scientist in AI & Mathematics</p>
+        <p class="mt-2 text-gray-600 dark:text-gray-400">Efficient Deep Learning · Optimization · HPC</p>
+        <div class="mt-6 flex justify-center md:justify-start gap-4">
+          <a href="CV_Steffen.pdf" class="px-4 py-2 bg-black text-white rounded hover:bg-gray-800">Download CV</a>
+          <a href="#contact" class="px-4 py-2 border border-gray-600 dark:border-gray-400 rounded hover:bg-gray-100 dark:hover:bg-gray-700">Contact Me</a>
         </div>
-    </section>
+        <div class="mt-4 flex justify-center md:justify-start gap-4">
+          <a href="https://github.com/ScSteffen" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="h-6 w-6">
+          </a>
+          <a href="https://www.linkedin.com/in/steffen-schotthoefer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="h-6 w-6">
+          </a>
+           <a href="https://scholar.google.com/citations?user=xxxxxxxxxx" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Google Scholar icon</title><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- THREE-->
-    <section id="three">
-        <h2>Publications</h2>
-            <h4>2024</h4>
-                 <ul>
-                    <li>GeoLoRA: Geometric integration for parameter efficient fine-tuning <br/>
-                        <b> <u>Steffen Schotthöfer</u>, E Zangrando, G Ceruti, F Tudisco, J Kusch
-                        </b><br/>
-                        <i><a href="https://arxiv.org/pdf/2410.18720">ArXiv preprint</a> </i>
-                    </li>
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto px-4 py-16">
+    <h3 class="text-2xl font-bold mb-4">About Me</h3>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      I'm a research scientist working at the intersection of applied mathematics and machine learning.
+      My focus is on efficient AI, model compression, and scalable optimization methods.
+    </p>
+<br />
+    <h3 class="text-2xl font-bold mb-4">Research Interests</h3>
+    <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300">
+      <li>Efficient AI models and compression</li>
+      <li>Low-rank pretraining and fine-tuning</li>
+      <li>Scalable & distributed machine learning</li>
+       <!-- <li>Mathematical foundations of deep learning</li>-->
+    </ul>
+  </section>
 
-                    <li>Federated Dynamical Low-Rank Training with Global Loss Convergence Guarantees<br/>
-                        <b> <u>Steffen Schotthöfer</u>, MP Laiu
-                        </b><br/>
-                        <i><a href="https://arxiv.org/pdf/2406.17887">ArXiv preprint</a> </i>
-                    </li>
+  <!-- Publications -->
+<section id="publications" class="bg-gray-50 dark:bg-gray-800 max-w-4xl mx-auto px-4 py-16">
+  <h3 class="text-2xl font-bold mb-6">Selected Publications</h3>
 
-                    <li>Structure-preserving neural networks for the regularized entropy-based closure of the Boltzmann moment system <br/>
-                        <b> <u>Steffen Schotthöfer</u>, M. Paul Laiu,  Martin Frank, Cory Hauck
-                        </b><br/>
-                        <i><a href="https://arxiv.org/abs/1804.05447">ArXiv preprint</a> </i>
-                    </li>
 
-                    <li>Geometry-aware training of factorized layers in tensor Tucker format <br/>
-                           <b> Emanuele Zangrando*, <u>Steffen Schotthöfer</u>*, Gianluca Ceruti, Jonas Kusch,
-                    Francesco Tudisco
-                </b><br/>
-                        * equal contribution<br/>
-                        <i><a href="https://nips.cc/virtual/2024/poster/94579">NeurIPS 2024</a> </i>
-                    </li>
 
-                    <li>Structure-Preserving Operator Learning: Modeling the Collision Operator of
-Kinetic Equations <br/>
-                        <b> Jae Yong Lee,  <u>Steffen Schotthöfer</u>, Tianbai Xiao, Sebastian Krumscheid, Martin Frank
-                        </b><br/>
-                        <i><a href="https://arxiv.org/html/2402.16613v1">ArXiv preprint</a> </i>
-                    </li>
-                </ul>
-        <h4>2023</h4>
-        <ul>
-            <li>Conservation properties of the augmented basis update & Galerkin integrator for kinetic problems <br/>
-                <b> Lukas Einkemmer, Jonas Kusch, <u>Steffen Schotthöfer</u>
-                </b><br/>
-                <i><a href="https://arxiv.org/abs/2311.06399">ArXiv preprint</a> </i>
-                <a href="https://github.com/JonasKu/Publication-Conservation-properties-of-the-augmented-basis-update-Galerkin-integrator"
-                   class="icon brands fa-github"><span
-                        class="label">Github</span></a>
-            </li>
-            <li>Rank-adaptive spectral pruning of convolutional layers during training <br/>
-                <b> Emanuele Zangrando*, <u>Steffen Schotthöfer</u>*, Gianluca Ceruti, Jonas Kusch,
-                    Francesco Tudisco
-                </b><br/>
-                * equal contribution<br/>
-                <i><a href="https://arxiv.org/abs/2305.19059">ArXiv preprint</a> </i>
-            </li>
+  <!-- 2025 -->
+  <div class="mb-8">
+    <h4 class="text-xl font-semibold mb-3">2025</h4>
+    <ul class="space-y-4 text-gray-800 dark:text-gray-200">
+         <li><strong>GeoLoRA: Geometric integration for parameter efficient fine‑tuning</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2410.18720" class="text-blue-600 underline">ICLR 2025</a>
+        </span><br />
+        <small>Schotthöfer, Zangrando, Ceruti, Tudisco, Kusch</small>
+      </li>
+      <li><strong>Structure‑preserving neural networks for the regularized entropy‑based closure of a linear, kinetic, radiative transport equation</strong><br />
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999125002505" class="text-blue-600 underline">Journal of Computational Physics</a><br />  <small>Schotthöfer, Laiu, Frank, Hauck</small>
+      </li>
+      <li><strong>A geometric framework for momentum‑based optimizers for low‑rank training</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2506.17475" class="text-blue-600 underline">Arxiv Preprint</a>
+        </span><br />
+        <small>Schotthöfer, Klein, Kusch</small>
+      </li>
+      <li><strong>Reference solutions for linear radiation transport: the Hohlraum and Lattice benchmarks</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2505.17284" class="text-blue-600 underline">Arxiv Preprint</a>
+        </span><br />
+        <small>Schotthöfer, Hauck</small>
+      </li>
+      <li><strong>Dynamical Low‑Rank Compression of Neural Networks with Robustness under Adversarial Attacks</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2505.08022" class="text-blue-600 underline">Arxiv Preprint</a>
+        </span><br />
+        <small>Schotthöfer, Yang, Schnake</small>
+      </li>
+      <li><strong>An Augmented Backward‑Corrected Projector Splitting Integrator for Dynamical Low‑Rank Training</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2502.03006" class="text-blue-600 underline">Arxiv Preprint</a>
+        </span><br />
+        <small>Kusch, Schotthöfer, Walter</small>
+      </li>
+    </ul>
+  </div>
 
-            <li>Synergies between Numerical Methods for Kinetic Equations and Neural Networks <br/>
-                <b> <u>Steffen Schotthöfer</u>
-                </b><br/>
-                <i><a href="https://publikationen.bibliothek.kit.edu/1000158838">Dissertation</a> </i>
-            </li>
-        </ul>
-        <h4>2022</h4>
-        <ul>
-            <li>Low-rank lottery tickets: finding efficient low-rank neural networks via matrix differential
-                equations <br/>
-                <b><u>Steffen Schotthöfer</u>, Emanuele Zangrando, Jonas Kusch, Gianluca Ceruti,
-                    Francesco Tudisco
-                </b><br/>
-                <i><a href="https://arxiv.org/abs/2205.13571">ArXiv preprint
-                    2205.13571</a>, accepted for NeurIPS2022 </i>
-                <a href="https://github.com/CSMMLab/DLRANet" class="icon brands fa-github"><span
-                        class="label">Github</span></a>
-            </li>
-            <li>Structure Preserving Neural Networks: A Case Study in the Entropy Closure of the Boltzmann
-                Equation<br/>
-                <b>
-                    <u>Steffen Schotthöfer</u>, Tianbai Xiao, Martin Frank, Cory Hauck
-                </b><br/>
-                <i><a href="https://proceedings.mlr.press/v162/schotthofer22a.html">ICML 2022</a> </i>
-                <a href="https://github.com/ScSteffen/neuralEntropyClosures"
-                   class="icon brands fa-github"><span
-                        class="label">Github</span></a>
-            </li>
-            <li>KiT-RT: An extendable framework for radiative transfer and therapy<br/>
-                <b>Jonas Kusch, <u>Steffen Schotthöfer</u>, Pia Stammer, Jannick Wolters, Tianbai Xiao
-                </b><br/>
-                <i><a href="https://arxiv.org/abs/2205.08417">ArXiv preprint 2205.08417</a> </i>
-                <a href="https://github.com/CSMMLab/KiT-RT"
-                   class="icon brands fa-github"><span
-                        class="label">Github</span></a>
-            </li>
-            <li>Predicting continuum breakdown with deep neural networks <br/>
-                <b> Tianbai Xiao, <u>Steffen Schotthöfer</u>, Martin Frank
-                </b><br/>
-                <i><a href="https://arxiv.org/abs/2203.02933">ArXiv preprint 2203.02933</a> </i>
-                <a href="https://github.com/CSMMLab/Flowmachine/tree/main/src/2d"
-                   class="icon brands fa-github"><span
-                        class="label">Github</span></a>
-            </li>
-        </ul>
-        <h4>2021</h4>
-        <ul>
-            <li>A structure-preserving surrogate model for the closure of the moment system of the Boltzmann
-                equation using convex deep neural networks <br/>
-                <b><u>Steffen Schotthöfer</u>, Tianbai Xiao, Martin Frank, Cory Hauck
-                </b><br/>
-                <i><a href="https://arc.aiaa.org/doi/10.2514/6.2021-2895">AIAA AVIATION 2021 FORUM</a> </i>
-                <a href="https://github.com/ScSteffen/neuralEntropyClosures"
-                   class="icon brands fa-github"><span
-                        class="label">Github</span></a>
-            </li>
+  <!-- 2024 -->
+  <div class="mb-8">
+    <h4 class="text-xl font-semibold mb-3">2024</h4>
+    <ul class="space-y-4 text-gray-800 dark:text-gray-200">
 
-        </ul>
-        <h4>2020</h4>
-        <ul>
-            <li>Regularization for Adjoint-Based Unsteady Aerodynamic Optimization Using Windowing
-                Techniques<br/>
-                <b><u>Steffen Schotthöfer</u>, Beckett Y. Zhou, Tim Albring, Nicolas R. Gauger
-                </b><br/>
-                <i><a href="https://arc.aiaa.org/doi/10.2514/1.J059983">AIAA Journal</a> </i>
-                <a href="https://github.com/su2code/SU2"
-                   class="icon brands fa-github"><span
-                        class="label">Github</span></a>
-            </li>
-        </ul>
-        <h4>2018</h4>
-        <ul>
-            <li>A Numerical Comparison of Consensus-Based Global Optimization to other Particle-based Global
-                Optimization Schemes<br/>
-                <b>Claudia Totzeck, René Pinnau, Sebastian Blauth, <u>Steffen Schotthöfer</u>
-                </b><br/>
-                <i><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/pamm.201800291">Proceedings in
-                    Applied Mathematics and Mechanics</a> </i>
-            </li>
-        </ul>
-    </section>
-    <section id="four">
-        <h2> Community and Volunteering</h2>
-        <ul>
-            <li>Reviewer for the Journals
-                 <ul>
-                    <li>
-                        <i><a href="https://link.springer.com/journal/10915">Journal of Scientific Computing</a></i>
-                    </li>
-                      <li>
-                             <i><a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a></i>
-                      </li>
-                      <li>
-                               <i><a href="https://www.siam.org/publications/journals/multiscale-modeling-and-simulation-a-siam-interdisciplinary-journal-mms">SIAM Multiscale Methods and Simulation</a></i>
-                      </li>
-                     <li>
-                               <i><a href="https://link.springer.com/journal/10957">Journal of Optimization Theory and Applications</a></i>
-                     </li>
-                 </ul>
-            </li>
+      <li><strong>Geometry-aware training of factorized layers in tensor Tucker format</strong><br />
+        <span class="italic">
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/ea48cb23a02ec3b895b0b0124307b0ec-Paper-Conference.pdf" class="text-blue-600 underline">NeurIPS 2024</a>
+        </span><br />
+        <small>Schotthöfer, Zhou, Albring, Gauger</small>
+      </li>
+      <li><strong>Federated dynamical low‑rank training with global loss convergence guarantees</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2406.17887" class="text-blue-600 underline">Arxiv Preprint</a>
+        </span><br />
+        <small>Schotthöfer, Laiu</small>
+      </li>
+      <li><strong>Structure‑preserving operator learning: Modeling the collision operator of kinetic equations</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2402.16613" class="text-blue-600 underline">Arxiv Preprint</a>
+        </span><br />
+        <small>Lee, Schotthöfer, Xiao, Krumscheid, Frank</small>
+      </li>
+    </ul>
+  </div>
 
-            <li>Reviewer for the conferences
-               <ul>
-                 <li>
-                    <i><a href="https://icml.cc/">ICML 2025 Conference</a></i>
-                 </li>
-                 <li>
-                    <i><a href="https://iclr.cc/">ICLR 2025 Conference</a></i>
-                </li>
-                <li>
-                    <i><a href="https://nips.cc/">NeurIPS 2024 Conference</a></i>
-                </li>
-                    <li>
-                    <i><a href="https://icml.cc/">ICML 2024 Conference</a></i>
-                </li>
-                   <li>
-                     <i><a href="https://aaai.org/conference/aaai/aaai-25/">AIAA 2025 Conference</a></i>
-                </li>
-                    <li>
-                      <i><a href="https://nips.cc/">NeurIPS 2023 Conference</a></i>
-                </li>
-               </ul>
+  <!-- 2023 -->
+  <div class="mb-8">
+    <h4 class="text-xl font-semibold mb-3">2023</h4>
+    <ul class="space-y-4 text-gray-800 dark:text-gray-200">
+      <li><strong>Conservation properties of the augmented basis update & Galerkin integrator for kinetic problems</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2311.06399" class="text-blue-600 underline">Arxiv Preprint</a>
+        </span><br />
+        <small>Einkemmer, Kusch, Schotthöfer</small>
+      </li>
+      <li><strong>Synergies between Numerical Methods for Kinetic Equations and Neural Networks</strong><br />
+        <span class="italic">
+          <a href="https://publikationen.bibliothek.kit.edu/1000158838" class="text-blue-600 underline">Dissertation</a>
+        </span><br />
+        <small>Schotthöfer</small>
+      </li>
+        <li><strong>Predicting continuum breakdown with deep neural networks</strong><br />
+        <span class="italic">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S002199912300373X" class="text-blue-600 underline">Journal of Computational Physics</a>
+        </span><br />
+        <small>Xiao, Schotthöfer, Frank</small>
+      </li>
+            <li><strong>KiT‑RT: An extendable framework for radiative transfer and therapy</strong><br />
+        <span class="italic">
+          <a href="https://doi.org/10.1145/3630001" class="text-blue-600 underline">ACM Trans.</a>
+        </span><br />
+        <small>Kusch, Schotthöfer, Stammer, Wolters, Xiao</small>
+      </li>
+    </ul>
+  </div>
 
-                  <li>Organization of the
-               <ul>
-                 <li>
-                      <i><a href="https://indico.scc.kit.edu/event/659/">International Workshop on Moment Methods in Kinetic
-                    Theory IV</a></i>
-                 </li>
-                 <li>
-                       <i> Minisymposium "Advances in High Dimensional PDE Methods using Sparse Grids and Low-Rank" at the <a href=https://www.siam.org/conferences-events/siam-conferences/cse25/>SIAM CSE 2025 </a> conference</i>
-                </li>
-                <li>
-                     <i> Minisymposium "Federated Learning and Data Mining in Distributed Environments" at the <a href=https://math.utk.edu/siam-seas/>SIAM SEAS 2025 </a> conference</i>
-                </li>
-               </ul>
-        </ul>
-    </section>
-    <section id="five">
-        <h2> Conference Presentations </h2>
-        <ul>
-            <li>Geometric integration for parameter efficient fine-tuning of neural networks<br/>
-                <i><a href="https://math.utk.edu/siam-seas/schedule/">SIAM SEAS 2025 Conference </a></i>
-                <br/>
+  <!-- 2022 -->
+  <div class="mb-8">
+    <h4 class="text-xl font-semibold mb-3">2022</h4>
+    <ul class="space-y-4 text-gray-800 dark:text-gray-200">
+      <li><strong>Low‑rank lottery tickets: finding efficient low‑rank neural networks via matrix differential equations</strong><br />
+        <span class="italic">
+          <a href="https://arxiv.org/abs/2205.13571" class="text-blue-600 underline">NeurIPS 2022</a>
+        </span><br />
+        <small>Schotthöfer, Zangrando, Kusch, Ceruti, Tudisco</small>
+      </li>
+      <li><strong>Structure Preserving Neural Networks: A Case Study in the Entropy Closure of the Boltzmann Equation</strong><br />
+        <span class="italic">
+          <a href="https://proceedings.mlr.press/v162/schotthofer22a.html" class="text-blue-600 underline">ICML 2022</a>
+        </span><br />
+        <small>Schotthöfer, Xiao, Frank, Hauck</small>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 2021 -->
+  <div class="mb-8">
+    <h4 class="text-xl font-semibold mb-3">2021</h4>
+    <ul class="space-y-4 text-gray-800 dark:text-gray-200">
+      <li><strong>A structure‑preserving surrogate model for the closure of the moment system of the Boltzmann equation using convex deep neural networks</strong><br />
+        <span class="italic">
+          <a href="https://arc.aiaa.org/doi/10.2514/6.2021-2895" class="text-blue-600 underline">AIAA Aviation 2021</a>
+        </span><br />
+        <small>Schotthöfer, Xiao, Frank, Hauck</small>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 2020 -->
+  <div class="mb-8">
+    <h4 class="text-xl font-semibold mb-3">2020</h4>
+    <ul class="space-y-4 text-gray-800 dark:text-gray-200">
+      <li><strong>Regularization for Adjoint‑Based Unsteady Aerodynamic Optimization Using Windowing Techniques</strong><br />
+        <span class="italic">
+          <a href="https://arc.aiaa.org/doi/10.2514/1.J059983" class="text-blue-600 underline">AIAA Journal</a>
+        </span><br />
+        <small>Schotthöfer, Zhou, Albring, Gauger</small>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 2018 -->
+  <div class="mb-8">
+    <h4 class="text-xl font-semibold mb-3">2018</h4>
+    <ul class="space-y-4 text-gray-800 dark:text-gray-200">
+      <li><strong>A Numerical Comparison of Consensus‑Based Global Optimization to other Particle‑based Global Optimization Schemes</strong><br />
+        <span class="italic">
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/pamm.201800291" class="text-blue-600 underline">PAMM</a>
+        </span><br />
+        <small>Totzeck, Pinnau, Blauth, Schotthöfer</small>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Conferences Section -->
+<section id="conferences" class="max-w-4xl mx-auto py-16 px-4">
+  <h2 class="text-3xl font-bold mb-6">Conferences</h2>
+  <ul class="list-disc list-inside space-y-4 text-gray-800 dark:text-gray-200">
+     <li>Geometric integration for parameter efficient fine-tuning of neural networks<br/>
+                <i><a href="https://math.utk.edu/siam-seas/schedule/"  class="text-blue-600 underline hover:text-blue-800">SIAM SEAS 2025 Conference </a></i>
                 March 2025
             </li>
             <li>Federated Dynamical Low-Rank Training with Global Loss Convergence Guarantees<br/>
-                <i><a href="https://math.utk.edu/siam-seas/schedule/">SIAM SEAS 2025 Conference </a></i>
-                <br/>
+                <i><a href="https://math.utk.edu/siam-seas/schedule/"  class="text-blue-600 underline hover:text-blue-800">SIAM SEAS 2025 Conference </a></i>
+
                 March 2025
             </li>
              <li>Federated Dynamical Low-Rank Training with Global Loss Convergence Guarantees<br/>
-                <i><a href="https://federated-learning.org/fl@fm-neurips-2024/">International Workshop on Federated Foundation Models
+                <i><a href="https://federated-learning.org/fl@fm-neurips-2024/"  class="text-blue-600 underline hover:text-blue-800">International Workshop on Federated Foundation Models
 In Conjunction with NeurIPS 2024 </a></i>
-                <br/>
+
                 December 2024
             </li>
             <li>Geometry-aware training of factorized layers in tensor Tucker format<br/>
-                <i><a href="https://neurips.cc/virtual/2024/poster/94579">NeurIPS 2024</a></i>
-                <br/>
+                <i><a href="https://neurips.cc/virtual/2024/poster/94579"  class="text-blue-600 underline hover:text-blue-800">NeurIPS 2024</a></i>
+
                 December 2024
             </li>
             <li>Dynamical Low-Rank Training Strategies for Federated Learning<br/>
-                <i><a href="https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80604">SIAM MDS 2024</a></i>
-                <br/>
+                <i><a href="https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80604"  class="text-blue-600 underline hover:text-blue-800">SIAM MDS 2024</a></i>
+
                 October 2024
             </li>
-            <li>Neural Network Training with Dynamical Low-Rank Inspired Optimizers<br/>
-                <i><a href="https://www.scicade2024.org/">SciCADE 2024</a></i>
-                <br/>
-                July 2024
-            </li>
-            <li>Conservation Properties of the Augmented Basis Update and Galerkin Integrator for Kinetic Problems<br/>
-                <i><a href="https://www.siam.org/conferences/cm/conference/an24">SIAM Annual Meeting 2024</a></i>
-                <br/>
-                July 2024
-            </li>
-            <li>Memory and time efficient neural network training via dynamical low-rank approximation<br/>
-                <i><a href="https://jahrestagung.gamm.org/annual-meeting-2024/program/young-researchers-minisymposia/">GAMM Annual Meeting 2024</a></i>
-                <br/>
-                March 2024
-            </li>
-          <li>Regularized, structure-preserving neural networks for the minimal entropy closure of the
-Boltzmann moment system<br/>
-            <i><a href="https://jahrestagung.gamm.org/annual-meeting-2024/program/young-researchers-minisymposia/">GAMM Annual Meeting 2024</a></i>
-            <br/>
-            March 2024
-            </li>
-            <li>Structure Preserving Neural Networks for Moment Method Acceleration<br/>
-                <i><a href="https://indico.scc.kit.edu/event/659/">International Workshop on Moment Methods in Kinetic
-                    Theory IV</a></i>
-                <br/>
-                April 2023
-            </li>
-            <li>Regularized, Structure-preserving Neural Networks for
-                the Minimal Entropy Closure of the Boltzmann Moment
-                System<br/>
-                <i><a href="https://www.siam.org/conferences-events/past-event-archive/cse23/">SIAM CSE 2023
-                    Conference</a></i>
-                <br/>
-                February 2023
-            </li>
-            <li>Low-rank lottery tickets: finding efficient low-rank neural networks via matrix differential
-                equations<br/>
-                <i><a href="https://nips.cc/Conferences/2022/Schedule?showEvent=53825">NeurIPS 2022
-                    Conference</a></i>
-                <br/>
-                November 2022
-            </li>
-            <li>Regularized, Structure-preserving Neural Networks for
-                the Minimal Entropy Closure of the Boltzmann Moment
-                System<br/>
-                <i><a href="https://www.foundationsofdl.de/#cards-section">Theoretical
-                    Foundations of Deep Learning - Annual Meeting, DFG Priority Programme</a></i>
-                <br/>
-                November 2022
-            </li>
-            <li>Low-rank lottery tickets: finding efficient low-rank neural networks via matrix differential
-                equations<br/>
-                <i><a href="https://ai-hub-karlsruhe.github.io/">AI Hub @ Karlsruhe | 2022</a></i>
-                <br/>
-                October 2022
-            </li>
-            <li>Neural network-based, structure-preserving entropy closures for the Boltzmann moment
-                system<br/>
-                <i><a href="http://gimcsimaiyoung2022.unipv.it/">GIMC SIMAI YOUNG</a></i>
-                <br/>
-                September 2022
-            </li>
-            <li>Structure Preserving Neural Networks: A Case Study in the Entropy Closure of the Boltzmann
-                Equation<br/>
-                <i><a href="https://proceedings.mlr.press/v162/schotthofer22a.html">ICML Conference</a></i>
-                <br/>
-                July 2022
-            </li>
-            <li>A structure-preserving surrogate model for the closure of the moment system of the Boltzmann
-                equation using convex deep neural networks<br/>
-                <i><a href="https://arc.aiaa.org/doi/10.2514/6.2021-2895">AIAA AVIATION 2021 FORUM</a> </i>
-                <br/>
-                August 2021
-            </li>
-            <li>Windowing Regularization Techniques for Unsteady Aerodynamic Shape Optimization<br/>
-                <i><a href="https://arc.aiaa.org/doi/10.2514/6.2020-3130">AIAA AVIATION 2020 FORUM</a> </i>
-                <br/>
-                June 2020
-            </li>
-            <li>Windowing Regularization Techniques for Unsteady Aerodynamic Shape Optimization<br/>
-                <i><a href="https://su2foundation.org/su2conference2020/">SU2 Conference 2020</a> </i>,
-                <i><a href="https://www.youtube.com/watch?v=KENu6l-B2O4&feature=youtu.be">(Recorded
-                    talk)</a> </i>
-                <br/>
-                June 2020
-            </li>
-        </ul>
-        <hr/>
-        <h2>Selected Talks</h2>
-        <ul>
-            <li>Memory and time efficient neural network training via dynamical low-rank approximation<br/>
-                <i>KIT, Karlsruhe, Germany  </i>
-                <br/>
-                April 2024
-            </li>
-            <li>Dynamical Low-Rank Approximation for
-Kinetic Equations and Neural Networks<br/>
-                <i> Lawrence Livermore National Laboratories, CA, USA  </i>
-                <br/>
-                December 2023
-            </li>
-             <li>Dynamical Low-Rank Approximation for
-Kinetic Equations and Neural Networks<br/>
-                <i>  Lawrence Berkeley National Laboratories, CA, USA  </i>
-                <br/>
-                December 2023
-            </li>
-            <li>Dynamical Low-Rank Compression of Neural Networks<br/>
-                <i><a href="https://twitter.com/ICL_UTK/status/1707762066252062935
-">ICL Seminar, University of Tennessee, Knoxville, USA </a> </i>
-                <br/>
-                September 2023
-            </li>
-            <li>Low-rank lottery tickets: Finding efficient low-rank neural networks via matrix differential
-                equations<br/>
-                <i><a href="https://num.math.uni-bayreuth.de/de/news/2023/modus-vortrag-schotthoefer/index.html">MODUS
-                    Seminar, University Bayreuth, Germany </a> </i>
-                <br/>
-                January 2023
-            </li>
-            <li>Low-rank lottery tickets: Finding efficient low-rank neural networks via matrix differential
-                equations<br/>
-                <i><a href="https://www.scicomp.uni-kl.de/events/?event_id1=3486">Scientific Computing
-                    Group, RPTU Kaiserslautern, Germany </a> </i>
-                <br/>
-                December 2022
-            </li>
-            <li>Low-rank lottery tickets: Finding efficient low-rank neural networks via matrix differential
-                equations<br/>
-                <i><a href="https://www.uibk.ac.at/mathematik/na/talks/gastvortrag-schotthoefer-steffen.pdf">Numerical
-                    Analysis and Scientific Computing Group, University of
-                    Innsbruck, Austria </a> </i>
-                <br/>
-                August 2022
-            </li>
-            <li>Structure Preserving Neural Network Based Entropy Closures for the Boltzmann Moment
-                System<br/>
-                <i><a href="https://csmd.ornl.gov/event/structure-preserving-neural-network-based-entropy-closures-boltzmann-moment">
-                    Oak Ridge National Lab, TN, USA </a> </i>
-                <br/>
-                April 2022
-            </li>
-            <li>Structure Preserving Neural Network Based Entropy Closures for the Boltzmann Moment
-                System<br/>
-                <i><a href="https://www.scc.kit.edu/veranstaltungen/12095.php"> KIT, Karlsruhe, Germany</a>
-                </i>
-                <br/>
-                February 2022
-            </li>
-            <li>Hybrid machine learning and numerical methods for radiative transport equations<br/>
-                <i><a href="https://www.scc.kit.edu/veranstaltungen/12095.php"> KIT, Karlsruhe, Germany</a>
-                </i>
-                <br/>
-                December 2020
-            </li>
-        </ul>
-    </section>
-    <!-- Four -->
-    <section id="six">
-        <h2>Software projects</h2>
-        <div class="row">
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/KiT-RT_logo_small.png" class="image fit thumb"><img
-                        src="img_news/KiT-RT_logo_small.png" alt=""/></a>
-                <h3>KiT-RT
-                    <a href="https://github.com/CSMMLab/KiT-RT" class="icon brands fa-github"><span
-                            class="label">Github</span></a>
-                </h3>
-                <p> The main focus of the KiT-RT software suite is on radiotherapy planning for cancer treatment and
-                    investigation of
-                    various research questions in the field of radiative transfer.
-                    This goal is supported by an easily extendable code structure that allows for straightforward
-                    implementation of additional methods and techniques.
-                    The KiT-RT framework is a high-performance open
-                    source C++ based platform for radiation transport, available on <a
-                            href="https://github.com/CSMMLab/KiT-RT">Github</a> with documentation on <a
-                            href="https://kit-rt.readthedocs.io/en/develop/index.html">ReadTheDocs</a>. The
-                    software-paper can
-                    be found on <a href="https://arxiv.org/abs/2205.08417">Arxiv</a>
-                </p>
-            </article>
-            <article class="col-6 col-12-xsmall work-item">
-                <a href="img_news/logoSU2.png" class="image fit thumb"><img src="img_news/logoSU2.png" alt=""/></a>
-                <h3>SU2
-                    <a href="https://su2code.github.io/" class="icon brands fa-github"><span class="label">Github</span></a>
-                </h3>
-                <p> Drag reduction of airplane wings is crucial for fuel efficient flight. We use windowing
-                    regularization to build a robust PDE constrained optimization for unsteady flows.
-                    On the NACA0012 Airfoil profile with an unsteady, turbulent flow at high angle of attack, we've
-                    achieved
-                    30% drag reduction compared to the unregularized baseline optimization.
-                    The method is embedded in the
-                    open-source, high performance multi-physics software <a
-                            href="https://su2code.github.io/">SU2</a>.
-                    Try it yourself with the <a href="https://su2code.github.io/tutorials/Unsteady_NACA0012/">SU2
-                        tutorial</a>.
-                </p>
-                <p>
-                    This work was awarded 1st place at the Multidisciplinary Design Optimization Student Paper
-                    Competititon at the <a href="https://www.aiaa.org/aviation">AIAA aviation forum 2020</a>.
-                </p>
-            </article>
-        </div>
-    </section>
+    <li>Neural Network Training with Dynamical Low-Rank Inspired Optimizers<br/>
+      <i><a href="https://www.scicade2024.org/" class="text-blue-600 underline hover:text-blue-800">SciCADE 2024</a></i>
+      July 2024
+    </li>
+    <li>Conservation Properties of the Augmented Basis Update and Galerkin Integrator for Kinetic Problems<br/>
+      <i><a href="https://www.siam.org/conferences/cm/conference/an24" class="text-blue-600 underline hover:text-blue-800">SIAM Annual Meeting 2024</a></i>
+      July 2024
+    </li>
+    <li>Memory and time efficient neural network training via dynamical low-rank approximation<br/>
+      <i><a href="https://jahrestagung.gamm.org/annual-meeting-2024/program/young-researchers-minisymposia/" class="text-blue-600 underline hover:text-blue-800">GAMM Annual Meeting 2024</a></i>
+      March 2024
+    </li>
+    <li>Regularized, structure-preserving neural networks for the minimal entropy closure of the Boltzmann moment system<br/>
+      <i><a href="https://jahrestagung.gamm.org/annual-meeting-2024/program/young-researchers-minisymposia/" class="text-blue-600 underline hover:text-blue-800">GAMM Annual Meeting 2024</a></i>
+      March 2024
+    </li>
+    <li>Structure Preserving Neural Networks for Moment Method Acceleration<br/>
+      <i><a href="https://indico.scc.kit.edu/event/659/" class="text-blue-600 underline hover:text-blue-800">International Workshop on Moment Methods in Kinetic Theory IV</a></i>
+      April 2023
+    </li>
+    <li>Regularized, Structure-preserving Neural Networks for the Minimal Entropy Closure of the Boltzmann Moment System<br/>
+      <i><a href="https://www.siam.org/conferences/cm/conference/cse23" class="text-blue-600 underline hover:text-blue-800">SIAM CSE 2023 Conference</a></i>
+      February 2023
+    </li>
+    <li>Low-rank lottery tickets: finding efficient low-rank neural networks via matrix differential equations<br/>
+      <i><a href="https://nips.cc/Conferences/2022/Schedule?showEvent=53825" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2022 Conference</a></i>
+      November 2022
+    </li>
+    <li>Regularized, Structure-preserving Neural Networks for the Minimal Entropy Closure of the Boltzmann Moment System<br/>
+      <i><a href="https://www.foundationsofdl.de/#cards-section" class="text-blue-600 underline hover:text-blue-800">Theoretical Foundations of Deep Learning - Annual Meeting, DFG Priority Programme</a></i>
+      November 2022
+    </li>
+    <li>Low-rank lottery tickets: finding efficient low-rank neural networks via matrix differential equations<br/>
+      <i><a href="https://ai-hub-karlsruhe.github.io/" class="text-blue-600 underline hover:text-blue-800">AI Hub @ Karlsruhe | 2022</a></i>
+      October 2022
+    </li>
+    <li>Neural network-based, structure-preserving entropy closures for the Boltzmann moment system<br/>
+      <i><a href="http://gimcsimaiyoung2022.unipv.it/" class="text-blue-600 underline hover:text-blue-800">GIMC SIMAI YOUNG</a></i>
+      September 2022
+    </li>
+    <li>Structure Preserving Neural Networks: A Case Study in the Entropy Closure of the Boltzmann Equation<br/>
+      <i><a href="https://proceedings.mlr.press/v162/schotthofer22a.html" class="text-blue-600 underline hover:text-blue-800">ICML Conference</a></i>
+      July 2022
+    </li>
+    <li>A structure-preserving surrogate model for the closure of the moment system of the Boltzmann equation using convex deep neural networks<br/>
+      <i><a href="https://arc.aiaa.org/doi/10.2514/6.2021-2895" class="text-blue-600 underline hover:text-blue-800">AIAA AVIATION 2021 FORUM</a></i>
+      August 2021
+    </li>
+    <li>Windowing Regularization Techniques for Unsteady Aerodynamic Shape Optimization<br/>
+      <i><a href="https://arc.aiaa.org/doi/10.2514/6.2020-3130" class="text-blue-600 underline hover:text-blue-800">AIAA AVIATION 2020 FORUM</a></i>
+      June 2020
+    </li>
+    <li>Windowing Regularization Techniques for Unsteady Aerodynamic Shape Optimization<br/>
+      <i><a href="https://su2foundation.org/su2conference2020/" class="text-blue-600 underline hover:text-blue-800">SU2 Conference 2020</a></i>, <i><a href="https://www.youtube.com/watch?v=KENu6l-B2O4&feature=youtu.be" class="text-blue-600 underline hover:text-blue-800">(Recorded talk)</a></i>
+      June 2020
+    </li>
+  </ul>
+</section>
 
-</div>
+  <section id="volunteering" class="bg-gray-50 dark:bg-gray-800 max-w-4xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold mb-6">Community and Volunteering</h2>
+  <ul class="list-disc list-inside space-y-4 text-gray-800 dark:text-gray-200">
+    <li>Reviewer for the Journals
+      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
+        <li><i><a href="https://link.springer.com/journal/10915" class="text-blue-600 underline hover:text-blue-800">Journal of Scientific Computing</a></i></li>
+        <li><i><a href="https://www.sciencedirect.com/journal/journal-of-computational-physics" class="text-blue-600 underline hover:text-blue-800">Journal of Computational Physics</a></i></li>
+        <li><i><a href="https://www.siam.org/publications/journals/multiscale-modeling-and-simulation-a-siam-interdisciplinary-journal-mms" class="text-blue-600 underline hover:text-blue-800">SIAM Multiscale Methods and Simulation</a></i></li>
+        <li><i><a href="https://link.springer.com/journal/10957" class="text-blue-600 underline hover:text-blue-800">Journal of Optimization Theory and Applications</a></i></li>
+      </ul>
+    </li>
 
-<!-- Footer -->
-<footer id="footer">
-    <ul class="icons">
-        <li><a href="mailto:schotthofers@ornl.gov?subject=Contact from your website"
-               class="icon solid fa-envelope"><span
-                class="label">Email</span></a></li>
-        <li><a href="https://github.com/ScSteffen" class="icon brands fa-github"><span
-                class="label">github</span></a></li>
-        <li><a href="https://www.linkedin.com/in/steffen-schotthoefer/" class="icon brands fa-linkedin"><span
-                class="label">linkedin</span></a></li>
-        <li><a href="https://scholar.google.com/citations?hl=en&user=dZqiHeMAAAAJ"
-               class="icon  brands  fa-google"><span class="label">google-scholar</span></a></li>
-        <li><a href="https://twitter.com/ScSteffen_" class="icon brands fa-twitter"> </a></li>
-    </ul>
-    <ul class="copyright">
-        <li>&copy; Steffen Schotthöfer</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    </ul>
-</footer>
+    <li>Reviewer for the Conferences
+      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
+        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2025 Conference</a></i></li>
+        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">ICML 2025 Conference</a></i></li>
+        <li><i><a href="https://iclr.cc/" class="text-blue-600 underline hover:text-blue-800">ICLR 2025 Conference</a></i></li>
+        <li><i><a href="https://nips.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2024 Conference</a></i></li>
+        <li><i><a href="https://icml.cc/" class="text-blue-600 underline hover:text-blue-800">ICML 2024 Conference</a></i></li>
+        <li><i><a href="https://aaai.org/conference/aaai/aaai-25/" class="text-blue-600 underline hover:text-blue-800">AIAA 2025 Conference</a></i></li>
+        <li><i><a href="https://nips.cc/" class="text-blue-600 underline hover:text-blue-800">NeurIPS 2023 Conference</a></i></li>
+      </ul>
+    </li>
+
+    <li>Organization of the
+      <ul class="list-disc list-inside ml-6 mt-2 space-y-2">
+        <li><i><a href="https://indico.scc.kit.edu/event/659/" class="text-blue-600 underline hover:text-blue-800">International Workshop on Moment Methods in Kinetic Theory IV</a></i></li>
+        <li><i>Minisymposium "Advances in High Dimensional PDE Methods using Sparse Grids and Low-Rank" at the <a href="https://www.siam.org/conferences-events/siam-conferences/cse25/" class="text-blue-600 underline hover:text-blue-800">SIAM CSE 2025</a> conference</i></li>
+        <li><i>Minisymposium "Federated Learning and Data Mining in Distributed Environments" at the <a href="https://math.utk.edu/siam-seas/" class="text-blue-600 underline hover:text-blue-800">SIAM SEAS 2025</a> conference</i></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<!-- Software Section -->
+<section id="software" class="max-w-4xl mx-auto py-16 px-4 mt-12">
+  <h2 class="text-3xl font-bold mb-6">Software Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-800 dark:text-gray-200">
+    <article class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+      <a href="https://github.com/CSMMLab/KiT-RT" class="block mb-4">
+        <img src="img_news/KiT-RT_logo_small.png" alt="KiT-RT Logo" class="w-full object-contain" />
+      </a>
+      <h3 class="text-xl font-semibold mb-2">
+        KiT-RT
+        <a href="https://github.com/CSMMLab/KiT-RT" class="inline-block ml-2 text-blue-600 hover:text-blue-800" aria-label="KiT-RT GitHub repository">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </h3>
+      <p>
+        The main focus of the KiT-RT software suite is radiotherapy planning for cancer treatment and research in radiative transfer.
+        It supports easy extension with additional methods and techniques. KiT-RT is a high-performance open source C++ platform, available on
+        <a href="https://github.com/CSMMLab/KiT-RT" class="text-blue-600 underline hover:text-blue-800">Github</a> with documentation on
+        <a href="https://kit-rt.readthedocs.io/en/develop/index.html" class="text-blue-600 underline hover:text-blue-800">ReadTheDocs</a>.
+        The software-paper is available on <a href="https://arxiv.org/abs/2205.08417" class="text-blue-600 underline hover:text-blue-800">Arxiv</a>.
+      </p>
+    </article>
+
+    <article class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+      <a href="https://su2code.github.io/" class="block mb-4">
+        <img src="img_news/logoSU2.png" alt="SU2 Logo" class="w-full object-contain" />
+      </a>
+      <h3 class="text-xl font-semibold mb-2">
+        SU2
+        <a href="https://su2code.github.io/" class="inline-block ml-2 text-blue-600 hover:text-blue-800" aria-label="SU2 GitHub repository">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </h3>
+      <p>
+        Drag reduction of airplane wings is crucial for fuel efficient flight. We use windowing regularization for robust PDE constrained optimization of unsteady flows.
+        On the NACA0012 airfoil with turbulent flow at high angle of attack, a 30% drag reduction compared to unregularized baseline was achieved.
+        This method is embedded in the open-source multi-physics software
+        <a href="https://su2code.github.io/" class="text-blue-600 underline hover:text-blue-800">SU2</a>. Try it yourself with the
+        <a href="https://su2code.github.io/tutorials/Unsteady_NACA0012/" class="text-blue-600 underline hover:text-blue-800">SU2 tutorial</a>.
+      </p>
+      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+        Awarded 1st place at the Multidisciplinary Design Optimization Student Paper Competition at the
+        <a href="https://www.aiaa.org/aviation" class="text-blue-600 underline hover:text-blue-800">AIAA Aviation Forum 2020</a>.
+      </p>
+    </article>
+  </div>
+</section>
 
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.poptrox.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+</section>
 
+
+  <!-- CV -->
+  <section id="cv" class="text-center py-16 px-4 bg-white dark:bg-gray-900">
+    <h3 class="text-2xl font-bold mb-4">Curriculum Vitae</h3>
+    <p class="mb-4 text-gray-600 dark:text-gray-300">Download my full CV below.</p>
+    <a href="CV_Steffen.pdf" class="inline-block px-6 py-3 bg-black text-white rounded hover:bg-gray-800">Download CV</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="text-center py-16 px-4 bg-gray-100 dark:bg-gray-800">
+    <h3 class="text-2xl font-bold mb-4">Contact</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-2">Open to research and applied AI opportunities.</p>
+   <span>steffen [dot] schotthoefer [at] gmail [dot] com</span></a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-sm text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900">
+    © 2025 Steffen Schotthöfer · <a href="#" class="underline">GitHub</a> · <a href="#" class="underline">LinkedIn</a>
+  </footer>
+
+  <!-- JS for theme toggle -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 </html>
