@@ -14,9 +14,7 @@
     <title>Steffen Schotthöfer – Research Scientist in AI & Mathematics</title>
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Basic meta -->
     <meta name="author" content="Steffen Schotthöfer">
@@ -66,35 +64,20 @@
 
     <link rel="icon" type="image/jpeg" href="assets/headshot.jpeg">
 </head>
-<body class="bg_colour">
-    <table border=0 class="bg_colour" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<body>
+    <table border=0 style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr style="padding:0px">
             <td style="padding:0px">
 
-                <!-- Name tab -->
-                <table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                <!-- Hero section (always visible) -->
+                <table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                     <tr style="padding:0px">
                         <td style="padding:2.5%;width:20%;max-width:20%">
-                            <a href="assets/headshot.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="assets/headshot.jpeg" class="img-circle"></a>
+                            <a href="assets/headshot.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="assets/headshot.jpeg" class="rounded-circle"></a>
                         </td>
                         <td style="padding:2.5%;width:60%;vertical-align:middle">
                             <p style="text-align:center">
                                 <h1 style="text-align:center"><name>Steffen Schotth&ouml;fer</name></h1>
-                            </p>
-                            <p style="text-align:center">
-                            &nbsp;|&nbsp;
-                            <a href="#about">About</a>
-                            &nbsp;|&nbsp;
-                            <a href="#publications">Publications</a>
-                            &nbsp;|&nbsp;
-                            <a href="#software">Software</a>
-                            &nbsp;|&nbsp;
-                            <a href="#conferences">Presentations</a>
-                            &nbsp;|&nbsp;
-                            <a href="#mentorship">Mentorship</a>
-                            &nbsp;|&nbsp;
-                            <a href="#volunteering">Volunteering</a>
-                            &nbsp;|&nbsp;
                             </p>
                             <p style="text-align:center"><strong>Research Scientist in AI & Mathematics</strong></p>
                             <p style="text-align:center">Efficient Deep Learning &middot; Optimization &middot; HPC</p>
@@ -103,55 +86,69 @@
                     </tr>
                 </tbody></table>
 
+                <!-- About (always visible) -->
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <tbody>
+                        <tr style="padding:0px">
+                            <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                <p>I'm a research scientist working at the intersection of applied mathematics, HPC and machine learning.
+                                My focus is on efficient AI, model compression, and scalable optimization methods.
+                                </p>
+                                <p>
+                                    Open for research and applied AI opportunities. Feel free to reach out if you would like to connect!
+                                </p>
+                                <p style="text-align:center">
+                                    &nbsp;~&nbsp;
+                                    <a href="https://github.com/ScSteffen" target="_blank">GitHub</a> &nbsp;|&nbsp;
+                                    <a href="https://www.linkedin.com/in/steffen-schotthoefer" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+                                    <a href="https://scholar.google.com/citations?user=dZqiHeMAAAAJ" target="_blank">Google Scholar</a>
+                                    &nbsp;~&nbsp;
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
 
-<!-- About section, quick links -->
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs" id="mainTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">Research</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="publications-tab" data-bs-toggle="tab" data-bs-target="#publications" type="button" role="tab" aria-controls="publications" aria-selected="false">Publications</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="software-tab" data-bs-toggle="tab" data-bs-target="#software" type="button" role="tab" aria-controls="software" aria-selected="false">Software</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="conferences-tab" data-bs-toggle="tab" data-bs-target="#conferences" type="button" role="tab" aria-controls="conferences" aria-selected="false">Presentations</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mentorship-tab" data-bs-toggle="tab" data-bs-target="#mentorship" type="button" role="tab" aria-controls="mentorship" aria-selected="false">Mentorship</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="volunteering-tab" data-bs-toggle="tab" data-bs-target="#volunteering" type="button" role="tab" aria-controls="volunteering" aria-selected="false">Volunteering</button>
+                    </li>
+                </ul>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-        <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p>I'm a research scientist working at the intersection of applied mathematics, HPC and machine learning.
-                My focus is on efficient AI, model compression, and scalable optimization methods.
-                </p>
-                <p>
-                    Open for research and applied AI opportunities. Feel free to reach out if you would like to connect!
-                </p>
-                <p style="text-align:center">
-                    &nbsp;~&nbsp;
-                    <a href="https://github.com/ScSteffen" target="_blank">GitHub</a> &nbsp;|&nbsp;
-                    <a href="https://www.linkedin.com/in/steffen-schotthoefer" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
-                    <a href="https://scholar.google.com/citations?user=dZqiHeMAAAAJ" target="_blank">Google Scholar</a>
-                    &nbsp;~&nbsp;
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<hr class="soft">
-
+                <!-- Tab Content -->
+                <div class="tab-content" id="mainTabContent">
 
 <!-- Research Interests -->
-<button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-about" id="about"><heading>Research Interests</heading></button> <a href="#" style="font-size:12px;">[back to top]</a>
-<div id="content-about" class="collapse in">
-    <div style="padding:10px; width:100%; margin-right:auto; margin-left:auto;">
+<div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+    <div style="padding:20px 10px;">
         <p>&bull; Efficient AI models and compression</p>
         <p>&bull; Low-rank pretraining and fine-tuning</p>
         <p>&bull; Scalable & distributed machine learning</p>
     </div>
 </div>
-<hr class="soft">
-
 
 <!-- Publications -->
-
-<button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-publications" id="publications"><heading>Selected Publications</heading></button> <a href="#" style="font-size:12px;">[back to top]</a>
-<div id="content-publications" class="collapse in">
-
-<!-- 2026 -->
-
+<div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="publications-tab">
 
 <!-- 2025 -->
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2025</heading>
@@ -248,7 +245,7 @@
 </tbody></table>
 
 <!-- 2024 -->
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2024</heading>
@@ -290,7 +287,7 @@
 </tbody></table>
 
 <!-- 2023 -->
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2023</heading>
@@ -343,7 +340,7 @@
 </tbody></table>
 
 <!-- 2022 -->
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2022</heading>
@@ -374,7 +371,7 @@
 </tbody></table>
 
 <!-- 2021 -->
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2021</heading>
@@ -394,7 +391,7 @@
 </tbody></table>
 
 <!-- 2020 -->
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2020</heading>
@@ -414,7 +411,7 @@
 </tbody></table>
 
 <!-- 2018 -->
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2018</heading>
@@ -434,14 +431,10 @@
 </tbody></table>
 
 </div>
-<hr class="soft">
-
 
 <!-- Software Projects -->
-
-<button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-software" id="software"><heading>Software Projects</heading></button> <a href="#" style="font-size:12px;">[back to top]</a>
-<div id="content-software" class="collapse in">
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="software-tab">
+<table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:0px;width:100%;vertical-align:middle">
             <div style="display:flex; align-items:top; margin-bottom:10px;">
@@ -482,14 +475,10 @@
     </tr>
 </tbody></table>
 </div>
-<hr class="soft">
 
-
-<!-- Conferences / Presentations -->
-
-<button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-conferences" id="conferences"><heading>Presentations</heading></button> <a href="#" style="font-size:12px;">[back to top]</a>
-<div id="content-conferences" class="collapse in">
-    <div style="padding:10px; width:100%; margin-right:auto; margin-left:auto;">
+<!-- Presentations -->
+<div class="tab-pane fade" id="conferences" role="tabpanel" aria-labelledby="conferences-tab">
+    <div style="padding:20px 10px;">
         <p>&bull; Geometric integration for parameter efficient fine-tuning of neural networks — <a href="https://math.utk.edu/siam-seas/schedule/" target="_blank">SIAM SEAS 2025</a>, March 2025</p>
         <p>&bull; Federated Dynamical Low-Rank Training with Global Loss Convergence Guarantees — <a href="https://math.utk.edu/siam-seas/schedule/" target="_blank">SIAM SEAS 2025</a>, March 2025</p>
         <p>&bull; Federated Dynamical Low-Rank Training with Global Loss Convergence Guarantees — <a href="https://federated-learning.org/fl@fm-neurips-2024/" target="_blank">FL@FM Workshop, NeurIPS 2024</a>, December 2024</p>
@@ -511,29 +500,36 @@
         <p>&bull; Windowing Regularization Techniques for Unsteady Aerodynamic Shape Optimization — <a href="https://su2foundation.org/su2conference2020/" target="_blank">SU2 Conference 2020</a> [<a href="https://www.youtube.com/watch?v=KENu6l-B2O4&feature=youtu.be" target="_blank">recorded talk</a>], June 2020</p>
     </div>
 </div>
-<hr class="soft">
 
-
-<!-- Students & Mentorship -->
-
-<button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-mentorship" id="mentorship"><heading>Students & Mentorship</heading></button> <a href="#" style="font-size:12px;">[back to top]</a>
-<div id="content-mentorship" class="collapse in">
-    <div style="padding:10px; width:100%; margin-right:auto; margin-left:auto;">
+<!-- Mentorship -->
+<div class="tab-pane fade" id="mentorship" role="tabpanel" aria-labelledby="mentorship-tab">
+    <div style="padding:20px 10px;">
         <p>I have had the pleasure of working with several talented students over the years on topics ranging from efficient deep learning to scientific computing. An incomplete list can be found below.</p>
-        <p>&bull; Thomas Snyder, summer intern at Oak Ridge National Lab 2024 & 2026, currently undergrad at Yale</p>
-        <p>&bull; First Last, Mentorship Situation [Year], Current Affiliation</p>
-        <p>&bull; First Last, Mentorship Situation [Year], Current Affiliation</p>
-        <p>&bull; First Last, Mentorship Situation [Year], Current Affiliation</p>
+        <p>&bull; Chinmay Patwardhan, visiting scholar at Oak Ridge National Lab Spring 2026, currently  Ph.D. student at KiT</p>
+        <p style="margin-left:20px;">&ndash; <em>Developing agentic workflow orchestration for multi-fidelity scientific simulation</em></p>
+        <p>&bull; Thomas Snyder, summer intern at Oak Ridge National Lab [2024 & 2025], currently undergrad student at Yale</p>
+        <p style="margin-left:20px;">&ndash; <em>Building low-rank compression of Vision Transformers for geospatial applications on resource constraint edge devices.</em></p>
+        <p>&bull; Hanna Park, summer intern at Oak Ridge National Lab [2025] (co-supervision), currently Ph.D. student at Mississippi State University</p>
+        <p style="margin-left:20px;">&ndash; <em>Investigating adersarial robustness of highly compressed vision models</em></p>
+        <p>&bull; Jakob Maisch, Bachelor Thesis at KIT [2023], currently M.Sc. student at KIT</p>
+        <p style="margin-left:20px;">&ndash; <em>Investigation of grokking phenomena in low-rank ResNets</em></p>
+         <p>&bull; Tim Stoll, Bachelor Thesis at KIT [2022]</p>
+        <p style="margin-left:20px;">&ndash; <em>Effects of Low Discrepancy Sampling for High Dimensional Neural Network Training with Application to Entropy Closures</em></p>
+        <p>&bull; Martin Sadric, Bachelor Thesis at KIT [2022]</p>
+        <p style="margin-left:20px;">&ndash; <em>Physics Informed Neural Networks for Dynamical Systems</em></p>
+         <p>&bull; Gabriel Moser,  Bachelor Thesis at KIT [2021]</p>
+        <p style="margin-left:20px;">&ndash; <em>Data-Driven Surrogate Models for Corrosion Simulation</em></p>
+        <p>&bull;  Florian Buk, Master Thesis at KIT [2020]</p>
+        <p style="margin-left:20px;">&ndash; <em>Investigation of Neural Network Prediction Performance for Structured
+Problems</em></p>
+       
+       
     </div>
 </div>
-<hr class="soft">
 
-
-<!-- Community & Volunteering -->
-
-<button style="border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-volunteering" id="volunteering"><heading>Community & Volunteering</heading></button> <a href="#" style="font-size:12px;">[back to top]</a>
-<div id="content-volunteering" class="collapse in">
-    <div style="padding:10px; width:100%; margin-right:auto; margin-left:auto;">
+<!-- Volunteering -->
+<div class="tab-pane fade" id="volunteering" role="tabpanel" aria-labelledby="volunteering-tab">
+    <div style="padding:20px 10px;">
 
         <p><strong>Journal Reviewer</strong></p>
         <p>&bull; <a href="https://link.springer.com/journal/10915" target="_blank">Journal of Scientific Computing</a></p>
@@ -553,16 +549,12 @@
         <p>&bull; Minisymposium "Federated Learning and Data Mining in Distributed Environments" at <a href="https://math.utk.edu/siam-seas/" target="_blank">SIAM SEAS 2025</a></p>
     </div>
 </div>
-<hr class="soft">
 
+                </div><!-- end tab-content -->
 
             </td>
         </tr>
-        <tr>
-            <td>
-                <p>This template is a modification to Jon Barron's <a href="https://jonbarron.info/" target="_blank">website</a>.</p>
-            </td>
-        </tr>
+
         <tr>
             <td>
                 <p></p>
@@ -570,6 +562,26 @@
         </tr>
     </table>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Activate tab from URL hash on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        var hash = window.location.hash;
+        if (hash) {
+            var tab = document.querySelector('[data-bs-target="' + hash + '"]');
+            if (tab) {
+                new bootstrap.Tab(tab).show();
+            }
+        }
+
+        // Update URL hash when a tab is shown
+        document.querySelectorAll('[data-bs-toggle="tab"]').forEach(function(tab) {
+            tab.addEventListener('shown.bs.tab', function(e) {
+                history.replaceState(null, null, e.target.getAttribute('data-bs-target'));
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>
