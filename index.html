@@ -72,42 +72,23 @@
                 <!-- Hero section (always visible) -->
                 <table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                     <tr style="padding:0px">
-                        <td style="padding:2.5%;width:20%;max-width:20%">
+                        <td style="padding:2.5%;width:20%;max-width:20%;vertical-align:top">
                             <a href="assets/headshot.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="assets/headshot.jpeg" class="rounded-circle"></a>
                         </td>
-                        <td style="padding:2.5%;width:60%;vertical-align:middle">
-                            <p style="text-align:center">
-                                <h1 style="text-align:center"><name>Steffen Schotth&ouml;fer</name></h1>
+                        <td style="padding:2.5%;width:70%;vertical-align:middle">
+                            <h1 style="margin-bottom:10px;"><name>Steffen Schotth&ouml;fer</name></h1>
+                            <p>I am a Research Scientist at <a href="https://https://www.ornl.gov/" target="_blank">Oak Ridge National Laboratory</a>.
+                            My research develops mathematically principled methods for efficient deep learning, including low-rank training, model compression, and geometry-aware optimization.
+                            I am broadly interested in the intersection of numerical analysis and machine learning, with recent work on adversarial robustness of compressed models, federated learning, and structure-preserving neural networks for scientific computing.</p>
+                            <p><strong>Bio:</strong> I received my Dr. rer. nat. from the <a href="https://www.kit.edu" target="_blank">Karlsruhe Institute of Technology</a> (KIT) in 2023, where I was advised by <a href="https://www.scc.kit.edu/personen/martin.frank.php" target="_blank">Prof. Dr. Martin Frank</a>. I received my M.Sc. and B.Sc. in Mathematics from <a href="https://rptu.de" target="_blank">TU Kaiserslautern</a>.</p>
+                            <p style="text-align:left">
+                                <a href="https://github.com/ScSteffen" target="_blank">GitHub</a> &nbsp;|&nbsp;
+                                <a href="https://www.linkedin.com/in/steffen-schotthoefer" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+                                <a href="https://scholar.google.com/citations?user=dZqiHeMAAAAJ" target="_blank">Google Scholar</a>
                             </p>
-                            <p style="text-align:center"><strong>Research Scientist in AI & Mathematics</strong></p>
-                            <p style="text-align:center">Efficient Deep Learning &middot; Optimization &middot; HPC</p>
                         </td>
-                        <td style="padding:2.5%;width:10%;max-width:10%">
                     </tr>
                 </tbody></table>
-
-                <!-- About (always visible) -->
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                    <tbody>
-                        <tr style="padding:0px">
-                            <td style="padding:2.5%;width:63%;vertical-align:middle">
-                                <p>I'm a research scientist working at the intersection of applied mathematics, HPC and machine learning.
-                                My focus is on efficient AI, model compression, and scalable optimization methods.
-                                </p>
-                                <p>
-                                    Open for research and applied AI opportunities. Feel free to reach out if you would like to connect!
-                                </p>
-                                <p style="text-align:center">
-                                    &nbsp;~&nbsp;
-                                    <a href="https://github.com/ScSteffen" target="_blank">GitHub</a> &nbsp;|&nbsp;
-                                    <a href="https://www.linkedin.com/in/steffen-schotthoefer" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
-                                    <a href="https://scholar.google.com/citations?user=dZqiHeMAAAAJ" target="_blank">Google Scholar</a>
-                                    &nbsp;~&nbsp;
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
                 <hr>
 
                 <!-- Tab Navigation -->
@@ -152,6 +133,17 @@
     <tr>
         <td style="padding:10px 0px 5px 20px;width:100%;vertical-align:middle">
             <heading style="font-size:18px;">2025</heading>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding:5px 20px;width:100%;vertical-align:middle">
+            <p>
+                <papertitle>Dynamical Low-Rank Compression of Neural Networks with Robustness under Adversarial Attacks</papertitle>
+                <br>
+                Schotth&ouml;fer, Yang, Schnake
+                <br>
+                <em><a href="https://arxiv.org/abs/2505.08022" target="_blank">NeurIPS 2025 [oral]</a></em>
+            </p>
         </td>
     </tr>
     <tr>
@@ -206,17 +198,6 @@
                 Schotth&ouml;fer, Hauck
                 <br>
                 <em><a href="https://arxiv.org/abs/2505.17284" target="_blank">Journal of Computational and Theoretical Transport</a></em>
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td style="padding:5px 20px;width:100%;vertical-align:middle">
-            <p>
-                <papertitle>Dynamical Low-Rank Compression of Neural Networks with Robustness under Adversarial Attacks</papertitle>
-                <br>
-                Schotth&ouml;fer, Yang, Schnake
-                <br>
-                <em><a href="https://arxiv.org/abs/2505.08022" target="_blank">NeurIPS 2025 [oral]</a></em>
             </p>
         </td>
     </tr>
@@ -434,6 +415,9 @@
 
 <!-- Software Projects -->
 <div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="software-tab">
+<div style="padding:20px 10px 0px 10px;">
+    <p>Most of my publications have an associated GitHub repository with code to reproduce the results. Below are some highlighted software projects.</p>
+</div>
 <table border=0 style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
         <td style="padding:0px;width:100%;vertical-align:middle">
@@ -445,6 +429,7 @@
                         <br>
                         The main focus of the KiT-RT software suite is radiotherapy planning for cancer treatment and research in radiative transfer.
                         It supports easy extension with additional methods and techniques. KiT-RT is a high-performance open source C++ platform.
+                        Used for foundation model training by <a href="https://www.llnl.gov" target="_blank">Lawrence Livermore National Laboratory</a> and <a href="https://www.nvidia.com" target="_blank">Nvidia</a>; for multi-fidelity uncertainty quantification by <a href="https://www.sandia.gov" target="_blank">Sandia National Laboratories</a> and <a href="https://www.ornl.gov" target="_blank">Oak Ridge National Laboratory</a>.
                         <br>
                         [<a href="https://github.com/CSMMLab/KiT-RT" target="_blank">GitHub</a>]
                         [<a href="https://kit-rt.readthedocs.io/en/develop/index.html" target="_blank">Docs</a>]
@@ -473,15 +458,40 @@
             </div>
         </td>
     </tr>
+    <tr>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+            <div style="display:flex; align-items:top; margin-bottom:10px;">
+                <div>
+                    <p>
+                        <papertitle>RobustDLRT</papertitle>
+                        <br>
+                        A Python toolbox for analyzing the adversarial robustness of neural networks and training robust low-rank compressed models.
+                        It provides tools for generating adversarial examples, evaluating adversarial accuracy, and performing compressed transfer learning with Vision Transformers for geospatial applications.
+                        Associated work was presented as an <a href="https://neurips.cc/virtual/2025/loc/mexico-city/oral/130317" target="_blank">oral presentation at NeurIPS 2025</a>, accepted at the <a href="https://arxiv.org/pdf/2505.08022" target="_blank">Methods and Opportunities at Small Scale (MOSS) Workshop at ICML 2025</a>, and featured in two papers at the <a href="https://neurips.cc/virtual/2025/loc/san-diego/123303" target="_blank">Constrained Optimization in Machine Learning Workshop at NeurIPS 2025</a>.
+                        <br>
+                        [<a href="https://github.com/ScSteffen/RobustDLRT" target="_blank">GitHub</a>]
+                        [<a href="https://arxiv.org/pdf/2505.08022" target="_blank">paper</a>]
+                    </p>
+                </div>
+            </div>
+        </td>
+    </tr>
 </tbody></table>
 </div>
 
 <!-- Presentations -->
 <div class="tab-pane fade" id="conferences" role="tabpanel" aria-labelledby="conferences-tab">
     <div style="padding:20px 10px;">
+        <p>&bull; A Structure Preserving, Data-driven Strategy for Entropy-based Moment Closures — CHaRMNET Seminar, September 2025</p>
+        <p>&bull; Uncertainty-aware inverse modeling for federated scientific discovery across DOE facilities — <a href="https://content.govdelivery.com/accounts/USDOEOS/bulletins/3daab88" target="_blank">ASCR Workshop: Inverse Methods for Complex Systems under Uncertainty</a>, July 2025</p>
+        <p>&bull; A data driven spherical harmonics method — <a href="https://sites.google.com/msu.edu/modeling-beyond-moore/home" target="_blank">Algorithms For Multiphysics Models In The Post-Moore's Law Era</a>, June 2025</p>
+        <p>&bull; Efficient Federated Learning via Dynamical Low-Rank Approximation — Federated and Collaborative Learning for Exascale Science and Security Workshop @ ORNL, June 2025</p>
+        <p>&bull; Dynamical Low-Rank Training for Extreme Scale Neural Networks — CCSD DAC Workshop 2025 @ ORNL, April 2025</p>
         <p>&bull; Geometric integration for parameter efficient fine-tuning of neural networks — <a href="https://math.utk.edu/siam-seas/schedule/" target="_blank">SIAM SEAS 2025</a>, March 2025</p>
         <p>&bull; Federated Dynamical Low-Rank Training with Global Loss Convergence Guarantees — <a href="https://math.utk.edu/siam-seas/schedule/" target="_blank">SIAM SEAS 2025</a>, March 2025</p>
+        <p>&bull; Mathematics of Low-Rank Training and Fine-Tuning of Neural Networks — Mathematics in Computation Section Seminar, January 2025</p>
         <p>&bull; Federated Dynamical Low-Rank Training with Global Loss Convergence Guarantees — <a href="https://federated-learning.org/fl@fm-neurips-2024/" target="_blank">FL@FM Workshop, NeurIPS 2024</a>, December 2024</p>
+        <p>&bull; Structure-preserving neural networks for the regularized entropy-based closure of a linear, kinetic, radiative transport equation — ChaRMNET Annual Meeting, December 2024</p>
         <p>&bull; Geometry-aware training of factorized layers in tensor Tucker format — <a href="https://neurips.cc/virtual/2024/poster/94579" target="_blank">NeurIPS 2024</a>, December 2024</p>
         <p>&bull; Dynamical Low-Rank Training Strategies for Federated Learning — <a href="https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80604" target="_blank">SIAM MDS 2024</a>, October 2024</p>
         <p>&bull; Neural Network Training with Dynamical Low-Rank Inspired Optimizers — <a href="https://www.scicade2024.org/" target="_blank">SciCADE 2024</a>, July 2024</p>
