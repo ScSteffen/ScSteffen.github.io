@@ -1,0 +1,8 @@
+title: "Steffen Schotthöfer"
+description: "AI + Optimization + Hardware-aware & HPC ML research. Low-rank methods, geometry-aware training, robust/scalable LLM fine-tuning."
+url: "https://scsteffen.github.io"
+permalink: /blog/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed

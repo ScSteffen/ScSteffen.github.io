@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Blog"
+permalink: /blog/
+---
+
+<h1 class="mb-4">Blog</h1>
+
+<div class="row row-cols-1 g-3">
+  {% for post in site.posts %}
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title mb-1">
+            <a href="{{ post.url }}" class="blog-card-link text-decoration-none">{{ post.title }}</a>
+          </h3>
+          {% if post.description %}
+            <p class="card-text text-muted mb-2">{{ post.description }}</p>
+          {% endif %}
+          <div class="text-muted" style="font-size: 0.95rem;">
+            {{ post.date | date: "%b %d, %Y" }}
+            {% if post.read_time %} · {{ post.read_time }} min read{% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

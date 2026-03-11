@@ -146,3 +146,43 @@ span.highlight {
   padding-left: 2.5%;
   padding-right: 2.5%;
 }
+
+.prose p {
+  line-height: 1.65;
+  font-size: 1.02rem;
+}
+
+.prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose code {
+  font-size: 0.95em;
+}
+
+.prose pre {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.35rem;
+}
+
+.prose a,
+.site-title-link,
+.blog-card-link {
+  font-size: inherit;
+}
